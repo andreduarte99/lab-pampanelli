@@ -1,0 +1,86 @@
+.hidden {
+    display: none;
+}
+
+
+.cabecalho{
+    display:flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding-top: 0.8rem;
+    padding-left: 0.5rem;
+    padding-bottom: 0.2rem;
+    border-bottom: 8px solid var(--cor-secundaria);
+    width: 100%;
+}
+
+
+.cabecalho__menu-hamburguer{
+    width: 48px;
+    height: 48px;
+    background-image: url("../img/menu.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.container__botao:checked ~ .container__rotulo > .cabecalho__menu-hamburguer {
+
+    background-image: url("../img/menu-aberto.png");
+
+}
+
+.container{
+    display: flex;
+    align-items: center;
+}
+
+.container__imagem{
+    padding: 0.3rem;
+    margin-right: 0.5rem;
+}
+
+.lista-menu{
+    display: none;
+    position:absolute;
+    top: 10%;
+    width: 100vw;
+    padding-top: 0.5rem;
+}
+
+.lista-menu__item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.3rem;
+    border-bottom: 1px solid var(--cor-principal);
+}
+
+.container__botao:checked~.lista-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    align-items: center;
+}
+
+.lista-menu__link {
+    background-color: var(--cor-principal);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+.container__botao{
+    display: none;
+}
+
+
+.logo{
+    width: 45%;
+    height: 100%;
+    float: right;
+    padding-right: 4%;
+}
+
+
