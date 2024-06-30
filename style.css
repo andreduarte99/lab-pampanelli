@@ -2,16 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url("styles/menu.css");
 @import url("styles/carrosel.css");
+@import url("styles/sobre.css");
 
 :root{
     --cor-principal: #018044;
     --cor-secundaria: #017D49;
     --cor-terciaria: #B2D3C2;
-    --fonte-principal: "Roboto", sans-serif;
+    --fonte-principal: "Asap", sans-serif;
+    --fonte-secundaria: "Roboto", sans-serif;
 }
 
 body{
     font-size: 16px;
-    font-family: var(--fonte-principal);
 }
 

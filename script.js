@@ -6,3 +6,12 @@ document.getElementById('menu').addEventListener('change', function() {
         carrosel.classList.remove('hidden');
     }
 });
+
+
+function openOverlay() {
+    document.getElementById('overlay').style.display = 'flex';
+}
+
+function closeOverlay(){
+    document.getElementById('overlay').style.display = 'none';
+}

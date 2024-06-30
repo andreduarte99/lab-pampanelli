@@ -6,7 +6,7 @@
 .cabecalho{
     display:flex;
     flex-direction: row;
-    gap: 1rem;
+    gap: 0.5rem;
     padding-top: 0.8rem;
     padding-left: 0.5rem;
     padding-bottom: 0.2rem;
@@ -43,9 +43,12 @@
 .lista-menu{
     display: none;
     position:absolute;
-    top: 10%;
-    width: 100vw;
+    top: 9.4%;
+    left: 0;
+    width: 100%;
     padding-top: 0.5rem;
+    height: 100%;
+    background-color: white;
 }
 
 .lista-menu__item{
@@ -77,10 +80,86 @@
 
 
 .logo{
-    width: 45%;
-    height: 100%;
-    float: right;
-    padding-right: 4%;
+    width: 50%;
+    height: 80%;
+    float: left;
 }
 
+.btn-cabecalho{
+    background-color: var(--cor-secundaria);
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-color: var(--cor-principal);
+    border-style: none;
+    margin-right: 1rem;
+    border-radius: 1rem;
+    margin-top: 5%;
+    font-family: var(--fonte-principal);
+    font-weight: 500;
+    letter-spacing: 0.08rem;
+}
+
+/*Estilogs para a div oculta */
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.content {
+    background-color: var(--cor-terciaria);
+    padding: 10% 20%;
+    border-radius: 5px;
+    text-align: center;
+    height: auto;
+    border-color: var(--cor-principal);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.close-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: var(--cor-secundaria);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: var(--fonte-principal);
+    font-weight: 500;
+    letter-spacing: 0.08rem;
+    font-size: 1.2rem;
+}
+
+.titulo__contato{
+    font-family: var(--fonte-principal);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--cor-principal);
+}
+
+.link-btn{
+    background-color: whitesmoke;
+    padding: 5% 0;
+    border-radius: 10px;
+    border: solid 1px var(--cor-secundaria);
+    color: var(--cor-secundaria);
+    font-size: 1.2rem;
+    font-family: var(--fonte-secundaria);
+    text-decoration: none;
+}
+
+.img__link-btn{
+    width: 28px;
+    height: 28px;
+}
 
