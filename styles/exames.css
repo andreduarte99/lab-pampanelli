@@ -1,0 +1,108 @@
+.hidden{
+    display: none;
+}
+
+.container__exames{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.titulo__exames{
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-bottom: 1px solid var( --cor-secundaria);
+    border-bottom-width: 5px;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 5px;
+}
+
+.btn__container-exames{
+    padding-top: 1rem;
+}
+
+.btn__exames{
+    text-decoration: none;
+    font-family: var(--fonte-principal);
+    color: white;
+    background-color: var(--cor-secundaria);
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+    border-radius: 1rem;
+    padding: 0.5rem 1.0rem;
+    border: 1px solid var(--cor-principal);
+}
+
+/*Página exames.html */
+
+.titulo__exame{
+    color: whitesmoke;
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
+    border-bottom: 2px solid var(--cor-principal);
+    background: linear-gradient(90deg, #018044, #017D49, #B2D3C2);
+}
+
+.container__barra-pesquisa{
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.container__pesquisa{
+    padding-left: 2rem;
+    padding-right: 1rem;
+}
+
+.exame-item{
+    list-style:disc;
+}
+
+.pesquisa__container{
+    width:80%;
+    display: block;
+    margin: 0 auto;
+}
+
+input#pesquisaInput{
+    margin: 0 auto;
+    width: 100%;
+    height: 45px;
+    padding: 0 20px;
+    font-size: 1rem;
+    border: 1px solid  var(--cor-terciaria);
+    outline: none;
+    &:focus{
+      border: 1px solid var(--cor-principal);
+      transition: 0.35s ease;
+      color: #000000;
+      &::-webkit-input-placeholder{
+        transition: opacity 0.45s ease; 
+          opacity: 0;
+       }
+      &::-moz-placeholder {
+        transition: opacity 0.45s ease; 
+          opacity: 0;
+       }
+      &:-ms-placeholder {
+       transition: opacity 0.45s ease; 
+         opacity: 0;
+       }    
+     }
+}
+
+.pesquisa__icone{
+    
+    position: relative;
+    float: right;
+    width: 18px;
+    height: 18px;
+    top: -30px;
+    right: 10px;
+      
+}
+

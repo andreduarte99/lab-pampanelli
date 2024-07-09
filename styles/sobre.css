@@ -30,7 +30,7 @@
 .btn__sobre{
     background-color: var(--cor-secundaria);
     color: white;
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem 1.0rem;
     border: 1px solid var(--cor-principal);
     border-radius: 1rem;
     font-family: var(--fonte-principal);
@@ -43,3 +43,15 @@
 .btn__sobre:focus{
    outline:none;
 }
+
+.btn__sobre-mostrar p{
+    padding-top: 1rem;
+    padding-right: 1rem;
+    font-family: var(--fonte-principal);
+}
+
+.btn__sobre-mostrar p span{
+    font-weight: bold;
+}
+
+

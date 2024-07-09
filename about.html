@@ -41,17 +41,17 @@
 
                     <li class="lista-menu__item">
                         <img src="./img/resultado.svg" alt="ícone resultados de exames">
-                        <a href="#" class="lista-menu__link">Resultados de Exames</a>
+                        <a href="./index.html#id__resultado" class="lista-menu__link" onclick="closeMenu()">Resultados de Exames</a>
                     </li>
 
                     <li class="lista-menu__item">
                         <img src="./img/exames.svg" alt="ícone exames">
-                        <a href="#" class="lista-menu__link">Exames</a>
+                        <a href="exames.html" class="lista-menu__link">Exames</a>
                     </li>
 
                     <li class="lista-menu__item">
                         <img src="./img/convenio.svg" alt="ícone convênios">
-                        <a href="#" class="lista-menu__link">Convênios</a>
+                        <a href="./index.html#id__convenios" class="lista-menu__link" onclick="closeMenu()">Convênios</a>
                     </li>
 
                     <li class="lista-menu__item">
@@ -70,7 +70,7 @@
         </div>
 
         <div class="container__logo">
-            <img class="logo" src="./img/logo.png" alt="Logo Laboratório Pampanelli">
+            <a href="index.html"><img class="logo" src="./img/logo.png" alt="Logo Laboratório Pampanelli"></a>
         </div>
 
         <div class="container__btn-cabecalho">
@@ -111,35 +111,45 @@
         <div class="conteudo__sobre-div">
             <button id="mostrarDivButtonSobre" class="btn__sobre" onclick="" >Laboratório <img src="./img/botao-adicionar.png" alt="botão ver mais" class="btn__sobre-img" id="img-sobre"></button>
             <div id="contentDivSobre" class="btn__sobre-mostrar hidden">
-                <p>Este é o conteúdo que eu quero mostrar.</p>
+                <p>Fundado em 2004, o Laboratório Pampanelli surgiu do sonho de uma empreendedora pioneira da cidade, dedicada a oferecer exames especializados com alta qualidade e agilidade a preços acessíveis.</br></br>
+
+                    Com mais de 50 parceiros, somos referência em atendimento diferenciado, baseando-nos em valores como ética, transparência, sustentabilidade, relacionamento diferenciado, responsabilidade e reconhecimento.</br></br>
+                    
+                    Oferecemos serviços de Análises Clínicas e Patológicas, Coleta Domiciliar, Exames Toxicológicos para CNH, CLT e Concursos, Testes de Triagem de Substâncias Ilícitas, Genética Humana (Cariótipo, Sexagem Fetal, Teste de Paternidade e Teste do Pezinho). Nosso compromisso é fornecer resultados de excelência e manter um relacionamento de confiança com nossos clientes, participando dos principais programas de controle de qualidade.</p>
             </div>
         </div>
 
         <div class="conteudo__sobre-div">
             <button id="mostrarDivButtonMissao" class="btn__sobre" onclick="">Missão <img src="./img/botao-adicionar.png" alt="botão ver mais" class="btn__sobre-img" id="img-missao"></button>
             <div id="contentDivMissao" class="btn__sobre-mostrar hidden">
-                <p>Este é o conteúdo que eu quero mostrar.</p>
+                <p>Fornecer a melhor assistência médica e serviços de emergência com rapidez, utilizando todos os recursos humanos e tecnológicos disponíveis para garantir conforto e tranquilidade aos nossos clientes.</p>
             </div>
         </div>
 
         <div class="conteudo__sobre-div">
             <button id="mostrarDivButtonVisao" class="btn__sobre" onclick="">Visão <img src="./img/botao-adicionar.png" alt="botão ver mais" class="btn__sobre-img" id="img-visao"></button>
             <div id="contentDivVisao" class="btn__sobre-mostrar hidden">
-                <p>Este é o conteúdo que eu quero mostrar.</p>
+                <p>Ser uma empresa modelo e referência na gestão de negócios de saúde, destacando-se como o parceiro ideal para provedores de saúde privada e pública no Brasil, assim como para as pessoas que confiam seu cuidado médico a nós.</p>
             </div>
         </div>
         
         <div class="conteudo__sobre-div">
             <button id="mostrarDivButtonValores" class="btn__sobre" onclick="">Valores <img src="./img/botao-adicionar.png" alt="botão ver mais" class="btn__sobre-img" id="img-valores"></button>
             <div id="contentDivValores" class="btn__sobre-mostrar hidden">
-                <p>Este é o conteúdo que eu quero mostrar.</p>
+                <p><span>Ética:</span> Guiar-se por este princípio para respeitar a vida e o espaço de cada cidadão.</br></br>
+
+                    <span>Solidariedade:</span> Manter uma percepção constante da realidade da saúde no Brasil, oferecendo soluções que valorizem e estimulem este valor.</br></br>
+                    
+                    <span>Humanização:</span> Priorizar o atendimento e o relacionamento humano, visando a satisfação e o bem-estar das pessoas.</p>
             </div>
         </div>
 
     </section>
 
      <!-- JavaScript (Opcional) -->
-     <script src="script.js"></script>
+     <script src="./scripts/script.js"></script>
+     <script src="./scripts/sobre.js"></script>
+     <script src="./scripts/pesquisa.js"></script>
      <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

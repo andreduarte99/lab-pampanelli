@@ -3,6 +3,9 @@
 @import url("styles/menu.css");
 @import url("styles/carrosel.css");
 @import url("styles/sobre.css");
+@import url("styles/resultados.css");
+@import url("styles/exames.css");
+@import url("styles/convenios.css");
 
 :root{
     --cor-principal: #018044;

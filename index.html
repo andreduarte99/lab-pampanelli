@@ -41,17 +41,17 @@
 
                     <li class="lista-menu__item">
                         <img src="./img/resultado.svg" alt="ícone resultados de exames">
-                        <a href="#" class="lista-menu__link">Resultados de Exames</a>
+                        <a href="#id__resultado" class="lista-menu__link" onclick="closeMenu()">Resultados de Exames</a>
                     </li>
 
                     <li class="lista-menu__item">
                         <img src="./img/exames.svg" alt="ícone exames">
-                        <a href="#" class="lista-menu__link">Exames</a>
+                        <a href="exames.html" class="lista-menu__link">Exames</a>
                     </li>
 
                     <li class="lista-menu__item">
                         <img src="./img/convenio.svg" alt="ícone convênios">
-                        <a href="#" class="lista-menu__link">Convênios</a>
+                        <a href="#id__convenios" class="lista-menu__link" onclick="closeMenu()">Convênios</a>
                     </li>
 
                     <li class="lista-menu__item">
@@ -70,7 +70,7 @@
         </div>
 
         <div class="container__logo">
-            <img class="logo" src="./img/logo.png" alt="Logo Laboratório Pampanelli">
+            <a href="index.html"><img class="logo" src="./img/logo.png" alt="Logo Laboratório Pampanelli"></a>
         </div>
 
         <div class="container__btn-cabecalho">
@@ -140,8 +140,47 @@
           
     </section>
 
+    <section id="id__resultado" class="container__resultado">
+
+        <div class="img__container-resultado">
+            <img class="img__resultado" src="./img/img_resultado.png" alt="imagem resultado">
+        </div>
+        <div class="titulo__container-resultado">
+            <h2 class="titulo__resultado">
+                Resultados de Exames
+            </h2>
+        </div>
+        <div class="btn__container-resultado">
+            <a href="https://laudos.autolac.com.br/#/login" target="_blank" class="btn__resultado">Abrir site</a>
+        </div>
+
+    </section>
+
+    <section id="id__exames" class="container__exames">
+        <div class="titulo__container-exames">
+            <h2 class="titulo__exames">
+                Nossos exames
+            </h2>
+        </div>
+        <div class="btn__container-exames">
+            <a href="#" class="btn__exames">
+                Saber mais...
+            </a>
+        </div>
+    </section>
+
+    <section id="id__convenios" class="container__convenios">
+        <div class="titulo__container-convenios">
+            <h2 class="titulo__convenios">
+                Convênios
+            </h2>
+        </div>
+    </section>
+
     <!-- JavaScript (Opcional) -->
-    <script src="script.js"></script>
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/sobre.js"></script>
+    <script src="./scripts/pesquisa.js"></script>
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
