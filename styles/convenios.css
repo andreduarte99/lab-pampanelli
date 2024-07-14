@@ -1,0 +1,40 @@
+.container__convenios{
+    background-color: var(--cor-terciaria);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.imgs__container-convenios{
+    display:flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 1rem;
+    align-items: center;
+}
+
+.titulo__convenios{
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-bottom: 1px solid var( --cor-secundaria);
+    border-bottom-width: 5px;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.imgs__convenios{
+    text-align: center;
+}
+
+.div__imgs-convenios{
+    background-color: white;
+    width: 70%;
+    text-align: center;
+    height: 200px;
+    align-content: center;
+    border-radius: 10px;
+    border: 1px solid var(--cor-secundaria);
+    text-shadow: none;
+}

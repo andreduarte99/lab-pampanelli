@@ -56,12 +56,14 @@
 
                     <li class="lista-menu__item">
                         <img src="./img/coleta.svg" alt="ícone coleta">
-                        <a href="#" class="lista-menu__link">Coleta</a>
+                        <a href="#id_coletas" class="lista-menu__link"
+                        onclick="closeMenu()">Coleta</a>
                     </li>
 
                     <li class="lista-menu__item">
                         <img src="./img/informativo.svg" alt="ícone informativos">
-                        <a href="#" class="lista-menu__link">Informativos</a>
+                        <a href="#id_informativos" class="lista-menu__link"
+                        onclick="closeMenu()">Informativos</a>
                     </li>
 
                 </ul>
@@ -165,7 +167,7 @@
         </div>
         <div class="btn__container-exames">
             <a href="exames.html" class="btn__exames">
-                Saber mais...
+                Clique aqui
             </a>
         </div>
     </section>
@@ -176,7 +178,49 @@
                 Convênios
             </h2>
         </div>
+        <div class="imgs__container-convenios">
+            <div class="div__imgs-convenios">
+                <img src="./img/sfvida.jpeg" class="imgs__convenios" alt="São Francisco Vida">
+            </div>
+           <div class="div__imgs-convenios">
+                <img src="./img/pscsaude.jpeg" class="imgs__convenios" alt="Plano Santa Casa Saúde">
+           </div>
+            <div class="div__imgs-convenios">
+                <img src="./img/petrobras.jpeg" class="imgs__convenios" alt="Petrobras">
+            </div>
+        </div>
     </section>
+
+    <section id="id_coletas" class="container__coletas">
+        <div class="coletas__container">
+            <h2 class="titulo__coletas">
+                Coleta
+            </h2>
+            <div class="container d-flex justify-content-center align-items-center">
+                <div class="card__coletas">
+                    <img src="./img/coleta2.png" class="card-img-top" alt="Enfermeiro(a) começando uma coleta">
+                    <div class="card-body">
+                    <h5 class="card-title">Horário de coleta</h5>
+                    <p class="card-text">Segunda a Sexta: 06:30 - 11:00.</br>
+                        Sábado: 06:30 - 10:00.</br>
+                        (exceto feriados).</br></br>
+                        Para informações sobre preparos de exames, entre em contato com seu pedido médico. Frascos para urina ou fezes são fornecidos gratuitamente no laboratório, ou a coleta pode ser feita presencialmente conforme os horários acima. Coleta domiciliar disponível, consulte taxas e preparos pelo telefone (12) 3882-2888 ou WhatsApp.</p>
+                    <a href="https://wa.me/message/HZTN34W3NHSTA1" class="btn__coletas"><img class="img__link-btn" src="./img/whatsapp2.png" alt="Ícone"> WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>  
+
+    <section id="id_informativos" class="container__informativos">
+        <div class="informativos__container">
+            <h2 class="titulo__informativos">
+                Informativos
+            </h2>
+        </div>
+    </section>  
+
+
 
     <!-- JavaScript (Opcional) -->
     <script src="./scripts/script.js"></script>

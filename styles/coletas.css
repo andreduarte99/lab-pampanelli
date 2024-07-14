@@ -1,0 +1,49 @@
+.container__coletas{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.titulo__coletas{
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-bottom: 1px solid var( --cor-secundaria);
+    border-bottom-width: 5px;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+.card .card-flex{
+    align-items: center;
+}
+
+.card-title{
+    font-family: var(--fonte-principal);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.card-text{
+    font-family: var(--fonte-secundaria);
+    font-size: 1rem;
+}
+
+.btn__coletas{
+    text-decoration: none;
+    font-family: var(--fonte-principal);
+    color: white;
+    background-color: var(--cor-secundaria);
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+    border-radius: 1rem;
+    padding: 0.5rem 1.0rem;
+    border: 1px solid var(--cor-principal);
+}
+
+.img__link-btn{
+    width: 24px;
+    height: 24px;
+}
