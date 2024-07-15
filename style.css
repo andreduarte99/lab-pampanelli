@@ -8,6 +8,9 @@
 @import url("styles/convenios.css");
 @import url("styles/coletas.css");
 @import url("styles/informativos.css");
+@import url("styles/localizacao.css");
+@import url("styles/footer.css");
+@import url("styles/ancora.css");
 
 :root{
     --cor-principal: #018044;

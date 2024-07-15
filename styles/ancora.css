@@ -1,0 +1,17 @@
+.back-to-top {
+    position: fixed;
+    bottom: 12%;
+    right: 5%;
+    display: none; /* Oculta o botão inicialmente */
+    background-color: var(--cor-secundaria);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 14px;
+    border: 1px solid white;
+}
+
+.back-to-top:hover {
+    background-color: var(--cor-terciaria);
+}

@@ -1,0 +1,35 @@
+.container__localizacao{
+    padding-top: 2rem;
+    padding-bottom: 2rem;;
+}
+
+.titulo__localizacao{
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-bottom: 1px solid var( --cor-secundaria);
+    border-bottom-width: 5px;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.localizacao__mapa{
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 2rem;
+}
+
+.endereco__localizacao{
+    font-size: 1.0rem;
+    font-family: var(--fonte-secundaria);
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+    border: 2px solid var(--cor-secundaria);
+    border-radius: 10px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
