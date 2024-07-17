@@ -39,6 +39,28 @@
     border: 1px solid var(--cor-principal);
 }
 
+@media only screen and (min-width: 768px){
+
+    .img__resultado{
+        width: 40%;
+    }
+
+    .titulo__resultado{
+        font-size: 1.4rem;
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+
+    .btn__resultado{
+        font-size: 1.2rem;
+    }
+
+}
+
+
+@media only screen and (min-width: 1280px){
+    
+}
 
 
 

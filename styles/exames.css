@@ -106,3 +106,23 @@ input#pesquisaInput{
       
 }
 
+
+@media only screen and (min-width: 768px){
+
+    .titulo__exames{
+        
+        font-size: 1.4rem;
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+
+    .btn__exames{
+       font-size: 1.2rem;
+    }
+
+}
+
+
+@media only screen and (min-width: 1280px){
+    
+}
