@@ -21,6 +21,10 @@
     border-radius: 5px;
 }
 
+.img__exames{
+    width: 70%;
+}
+
 .btn__container-exames{
     padding-top: 1rem;
 }
@@ -129,9 +133,64 @@ input#pesquisaInput{
         margin: 0 12%;
     }
 
+    .img__exames{
+        width: 40%;
+    }
+
 }
 
 
 @media only screen and (min-width: 1280px){
-    
+    .container__exames{
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        gap: 12%;
+    }
+
+    .img__exames{
+        width: 140%;
+        height: auto;
+        transition: transform 0.3s ease, border-color 0.3s ease;
+    }
+
+    .img__exames:hover{
+        transform: scale(1.02); 
+    }
+
+    .titulo__exames{
+        font-size: 1.6rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .btn__exames{
+        transition: transform 0.3s ease, border-color 0.3s ease;
+        text-decoration: none;
+    }
+
+    .btn__exames:hover{
+        background-color: var(--cor-quartenaria);
+        transform: scale(1.02); 
+    }
+
+    .btn__exames:link,
+    .btn__exames:visited,
+    .btn__exames:hover,
+    .btn__exames:focus,
+    .btn__exames:active {
+        text-decoration: none;
+        color: white;
+    }
+
+    .img__container-exames{
+        order:2;
+    }
+
+    .titulo__container-exames{
+        order: 1;
+    }
+
 }

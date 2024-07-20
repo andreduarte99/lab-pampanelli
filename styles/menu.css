@@ -7,6 +7,9 @@ body{
     display: none;
 }
 
+.menu__desktop{
+    display:none;
+}
 
 .cabecalho{
     display:flex;
@@ -202,5 +205,104 @@ body{
 
 
 @media only screen and (min-width: 1280px){
+
+    body{
+        padding-top: 6%;
+    }
+
+    .cabecalho{
+       justify-content: space-around;
+    }
     
+    .menu-hamburguer{
+        display: none;
+    }
+
+    .container__logo{
+        display:none;
+    }
+
+    .menu__desktop{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .container__logo-desktop{
+        margin-left: 1%;
+        margin-bottom: 1%;
+        margin-right: 0;
+        padding-right: 0;
+    }
+
+    .logo__desktop{
+        width: 60%;
+        height: auto;
+    }
+
+    .btns__desktop{
+        display: flex;
+        flex-direction: row;
+        padding-right: 40%;
+        align-content: center;
+        align-items: center;
+        gap: 1rem;
+        transition: transform 0.3s ease;
+    }
+
+    .lista-menu__link:hover{
+        background-color: var(--cor-quartenaria);
+        transform: scale(1.02);
+    }
+
+    .btn-cabecalho{
+        transition: transform 0.3s ease;
+    }
+
+    .btn-cabecalho:hover{
+        background-color: var(--cor-quartenaria);
+        transform: scale(1.02);  
+    }
+
+    .content {
+        padding: 5% 8%;
+    }
+
+    .close-btn{
+        transition: transform 0.3s ease;
+    }
+
+    .close-btn:hover{
+        background-color: var(--cor-quartenaria);
+        transform: scale(1.02);  
+    }
+
+    .link-btn{
+        transition: transform 0.3s ease, border-color 0.3s ease;
+        text-decoration: none;
+    }
+    
+    .img__link-btn{
+        transition: transform 0.3s ease;
+    }
+
+    .link-btn:hover {
+        transform: scale(1.02); /* Aumenta o botão ligeiramente */
+        border-color:  var(--cor-quartenaria); /* Adiciona uma borda colorida */
+    }
+
+    .link-btn:link,
+    .link-btn:visited,
+    .link-btn:hover,
+    .link-btn:focus,
+    .link-btn:active {
+        text-decoration: none;
+        color: var(--cor-secundaria);
+    }
+
+    .link-btn:hover .img__link-btn {
+        transform: scale(1.02); /* Aumenta o ícone ligeiramente */
+    }
+
 }

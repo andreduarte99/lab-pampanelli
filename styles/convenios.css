@@ -53,5 +53,27 @@
 
 
 @media only screen and (min-width: 1280px){
-    
+
+    .titulo__convenios{
+        font-size: 1.6rem;
+        margin-left: 46.8%;
+        margin-right: 46.8%;
+    }
+
+    .imgs__container-convenios{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .div__imgs-convenios{
+        width: 15%;
+        transition: transform 0.3s ease, border-color 0.3s ease;
+    }
+
+    .div__imgs-convenios:hover{
+        border: 2px solid var(--cor-quartenaria);
+        transform: scale(1.02);
+    }
+
 }

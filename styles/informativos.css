@@ -142,5 +142,72 @@
 
 
 @media only screen and (min-width: 1280px){
-    
+    .titulo__informativos{
+        font-size: 1.6rem;
+        margin-left: 46%;
+        margin-right: 46%;
+    }
+
+    .img__informativo{
+        transition: transform 0.3s ease, border-color 0.3s ease;
+    }
+
+    .img__informativo:hover{
+        border: 2px solid var(--cor-quartenaria);
+        transform: scale(1.02);
+    }
+
+    .container__informativo-div{
+        display: flex;
+        flex-direction: column;
+        gap:2rem;
+        padding-bottom: 1rem;
+    }
+
+    .separa__informativo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        gap:1rem;
+    }
+
+    .informativos__container{
+        align-items: center;
+    }
+
+    .container__informativo-p{
+        text-align: start;
+        padding: 2% 2%;
+        margin: 2% 2%;
+        transition: transform 0.3s ease, border-color 0.3s ease;
+    }
+
+    .container__informativo-p:hover{
+        border: 2px solid var(--cor-quartenaria);
+        transform: scale(1.02); 
+    }
+
+    .btn__informativo{
+        transition: transform 0.3s ease, border-color 0.3s ease;
+        text-decoration: none;
+    }
+
+    .btn__informativo:hover{
+        background-color: var(--cor-quartenaria);
+        transform: scale(1.02); 
+    }
+
+    .btn__informativo:link,
+    .btn__informativo:visited,
+    .btn__informativos:hover,
+    .btn__informativos:focus,
+    .btn__informativos:active {
+        text-decoration: none;
+        color: white;
+    }
+
+
+
+
 }

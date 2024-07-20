@@ -63,5 +63,55 @@
 
 
 @media only screen and (min-width: 1280px){
+
+    .titulo__coletas{
+        font-size: 1.6rem;
+        margin-left: 45%;
+        margin-right: 45%;
+    }
+
+    .card__coletas{
+        display: flex;
+        flex-direction: row;
+        gap:2%;
+    }
+
+    .card-title{
+        font-size: 1.4rem;
+    }
     
+    .card-text{
+        font-size: 1.2rem;
+    }
+
+    .btn__coletas{
+        transition: transform 0.3s ease, border-color 0.3s ease;
+        text-decoration: none;
+    }
+
+    .img__link-btn{
+        transition: transform 0.3s ease;
+    }
+
+    .btn__coletas:hover{
+        background-color: var(--cor-quartenaria);
+        transform: scale(1.02); 
+    }
+
+    .btn__coletas:link,
+    .btn__coletas:visited,
+    .btn__coletas:hover,
+    .btn__coletas:focus,
+    .btn__coletas:active {
+        text-decoration: none;
+        color: white;
+    }
+
+    .btn__coletas:hover .img__link-btn {
+        transform: scale(1.02); /* Aumenta o ícone ligeiramente */
+    }
+
+
+    
+
 }

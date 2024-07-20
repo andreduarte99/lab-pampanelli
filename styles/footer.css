@@ -32,5 +32,15 @@
 
 
 @media only screen and (min-width: 1280px){
-    
+    .container__footer{
+        font-size: 1.2rem;
+    }
+
+    .img__redes{
+        transition: transform 0.3s ease, border-color 0.3s ease;
+    }
+
+    .img__redes:hover{
+        transform: scale(1.1);
+    }
 }
