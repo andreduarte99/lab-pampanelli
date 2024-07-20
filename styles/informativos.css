@@ -125,7 +125,19 @@
 }
 
 @media only screen and (min-width: 768px){
+    .titulo__informativos{
+        font-size: 1.4rem;
+        margin-left: 35%;
+        margin-right: 35%;
+    }
 
+    .container__informativo-p{
+        margin: 5% 25%;
+    }
+
+    .btn__informativo{
+        font-size: 1.2rem;
+    }
 }
 
 

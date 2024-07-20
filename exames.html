@@ -17,665 +17,684 @@
 </head>
 <body>
 
-    <header class="cabecalho">
-        <div class="menu-hamburguer">
+    <div class="wrapper">
+        <header class="cabecalho">
+            <div class="menu-hamburguer">
 
-            <div id="container">
+                <div id="container">
 
-                <input type="checkbox" id="menu" class="container__botao">
-                <label for="menu" class="container__rotulo">
-                    <span class="cabecalho__menu-hamburguer container__imagem"></span>
-                </label>
+                    <input type="checkbox" id="menu" class="container__botao">
+                    <label for="menu" class="container__rotulo">
+                        <span class="cabecalho__menu-hamburguer container__imagem"></span>
+                    </label>
 
-                <ul  class="lista-menu">
-                    
-                    <li class="lista-menu__item">
-                        <img src="./img/home.svg" alt="ícone home">
-                        <a href="index.html" class="lista-menu__link">Home</a>
-                    </li>
+                    <ul  class="lista-menu">
+                        
+                        <li class="lista-menu__item">
+                            <img src="./img/home.svg" alt="ícone home">
+                            <a href="index.html" class="lista-menu__link">Home</a>
+                        </li>
 
-                    <li class="lista-menu__item">
-                        <img src="./img/sobre.svg" alt="ícone sobre">
-                        <a href="about.html" class="lista-menu__link">Sobre</a>
-                    </li>
+                        <li class="lista-menu__item">
+                            <img src="./img/sobre.svg" alt="ícone sobre">
+                            <a href="about.html" class="lista-menu__link">Sobre</a>
+                        </li>
 
-                    <li class="lista-menu__item">
-                        <img src="./img/resultado.svg" alt="ícone resultados de exames">
-                        <a href="./index.html#id__resultado" class="lista-menu__link" onclick="closeMenu()">Resultados de Exames</a>
-                    </li>
+                        <li class="lista-menu__item">
+                            <img src="./img/resultado.svg" alt="ícone resultados de exames">
+                            <a href="./index.html#id__resultado" class="lista-menu__link" onclick="closeMenu()">Resultados de Exames</a>
+                        </li>
 
-                    <li class="lista-menu__item">
-                        <img src="./img/exames.svg" alt="ícone exames">
-                        <a href="exames.html" class="lista-menu__link">Exames</a>
-                    </li>
+                        <li class="lista-menu__item">
+                            <img src="./img/exames.svg" alt="ícone exames">
+                            <a href="exames.html" class="lista-menu__link">Exames</a>
+                        </li>
 
-                    <li class="lista-menu__item">
-                        <img src="./img/convenio.svg" alt="ícone convênios">
-                        <a href="./index.html#id__convenios" class="lista-menu__link" onclick="closeMenu()">Convênios</a>
-                    </li>
+                        <li class="lista-menu__item">
+                            <img src="./img/convenio.svg" alt="ícone convênios">
+                            <a href="./index.html#id__convenios" class="lista-menu__link" onclick="closeMenu()">Convênios</a>
+                        </li>
 
-                    <li class="lista-menu__item">
-                        <img src="./img/coleta.svg" alt="ícone coleta">
-                        <a href="./index.html#id_coletas" class="lista-menu__link">Coleta</a>
-                    </li>
+                        <li class="lista-menu__item">
+                            <img src="./img/coleta.svg" alt="ícone coleta">
+                            <a href="./index.html#id_coletas" class="lista-menu__link">Coleta</a>
+                        </li>
 
-                    <li class="lista-menu__item">
-                        <img src="./img/informativo.svg" alt="ícone informativos">
-                        <a href="./index.html#id_informativos" class="lista-menu__link">Informativos</a>
-                    </li>
+                        <li class="lista-menu__item">
+                            <img src="./img/informativo.svg" alt="ícone informativos">
+                            <a href="./index.html#id_informativos" class="lista-menu__link">Informativos</a>
+                        </li>
 
-                    <li class="lista-menu__item">
-                        <img src="./img/localizacao.png" alt="ícone informativos">
-                        <a href="./index.html#id_localizacao" class="lista-menu__link"
-                        onclick="closeMenu()">Localização</a>
-                    </li>
+                        <li class="lista-menu__item">
+                            <img src="./img/localizacao.png" alt="ícone informativos">
+                            <a href="./index.html#id_localizacao" class="lista-menu__link"
+                            onclick="closeMenu()">Localização</a>
+                        </li>
 
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="container__logo">
+                <a href="index.html"><img class="logo" src="./img/logo.png" alt="Logo Laboratório Pampanelli"></a>
+            </div>
+
+            <div class="container__btn-cabecalho">
+                <button type="button" class="btn-cabecalho" onclick="openOverlay()">Contatos</button>
+            </div>
+
+            <div class="overlay" id="overlay">
+                <div class="content">
+                    <h2 class="titulo__contato">Fale conosco</h2>
+                    <a href="https://wa.me/message/HZTN34W3NHSTA1" class="link-btn">
+                        <img class="img__link-btn" src="./img/whatsapp.png" alt="Ícone">
+                        WhatsApp
+                    </a>
+                    <a href="tel:+551238822888" class="link-btn">
+                        <img class="img__link-btn" src="./img/contato.svg" alt="Ícone">
+                        Telefone
+                    </a>
+                    <a href="mailto:contato@laboratoriopampanelli.com.br" class="link-btn">
+                        <img class="img__link-btn" src="./img/email.png" alt="Ícone">
+                        E-mail
+                    </a>
+                    <button class="close-btn" onclick="closeOverlay()">Fechar</button>
+                </div>
+            </div>
+
+        </header>
+
+        <section class="container__exame">
+            <div class="exame__titulo">
+                <h1 class="titulo__exame">Exames</h1>
+            </div>
+
+            <div class="container__barra-pesquisa">
+                <form class="pesquisa__container">
+                    <input type="text" id="pesquisaInput" placeholder="Buscar exames..."><a href="#"><img class="pesquisa__icone" id="icone__pesquisa" src="./img/lupa.png" alt="ícone de pesquisa"></a>
+                </form>
+            </div>
+            <div class="container__pesquisa">
+                <ul id="listaExames" class="lista-exames">
+                    <li class="exame-item">ALFA HIDROXIPROGESTERONA NEONATAL</li>
+                    <li class="exame-item">CETOSTEROIDES NEUTROS TOTAIS [17-KS]</li>
+                    <li class="exame-item">ALFA-HIDROXIPROGESTERONA EM SORO</li>
+                    <li class="exame-item">HIDROXILASE ALFA</li>
+                    <li class="exame-item">HIDROXICALCIFEROL D3</li>
+                    <li class="exame-item">HIDROXIVITAMINA D</li>
+                    <li class="exame-item">ALFA ANDROSTENEDIOL GLICURONIDE</li>
+                    <li class="exame-item">ACETILCOLINESTERASE</li>
+                    <li class="exame-item">ACETONA URINARIA</li>
+                    <li class="exame-item">ACIDO CITRICO ( URINA 24 HORAS )</li>
+                    <li class="exame-item">ACIDO CITRICO - CITRATO (URINA 24 HORAS)</li>
+                    <li class="exame-item">ACIDO CITRICO - CITRATO (URINA AMOSTRA UNICA/RECE)</li>
+                    <li class="exame-item">ACIDO DELTA AMINO LEVULINICO (URINA 24 HORAS)</li>
+                    <li class="exame-item">ACIDO DELTA AMINO LEVULINICO (URINA AMOSTRA UNICA)</li>
+                    <li class="exame-item">ACIDO FENILGLIOXILICO (URINA 24 HORAS)</li>
+                    <li class="exame-item">ACIDO FENILGLIOXILICO (URINA AMOSTRA UNICA/RECENT)</li>
+                    <li class="exame-item">ACIDO FENILGLIOXILICO URINA</li>
+                    <li class="exame-item">ACIDO FOLICO</li>
+                    <li class="exame-item">ACIDO HIPURICO (AMOSTRA ISOLADA)</li>
+                    <li class="exame-item">ACIDO HIPURICO (URINA 24 HORAS)</li>
+                    <li class="exame-item">ACIDO HIPURICO PRÉ JORNADA</li>
+                    <li class="exame-item">ACIDO LATICO - LACTATO</li>
+                    <li class="exame-item">ACIDO MANDELICO ( AMOSTRA ISOLADA )</li>
+                    <li class="exame-item">ACIDO METIL HIPURICO ( AMOSTRA ISOLADA )</li>
+                    <li class="exame-item">ACIDO METIL HIPURICO (24 HORAS)</li>
+                    <li class="exame-item">ACIDO METILMALONICO</li>
+                    <li class="exame-item">ACIDO OXALICO - OXALATO</li>
+                    <li class="exame-item">ACIDO OXALICO - OXALATO (URINA 24 HORAS)</li>
+                    <li class="exame-item">ACIDO OXALICO - OXALATO (URINA ALEATÓRTIA)</li>
+                    <li class="exame-item">ACIDO TRANSMUCONICO</li>
+                    <li class="exame-item">ACIDO TRICLOROACETICO URINARIO</li>
+                    <li class="exame-item">ACIDO URICO</li>
+                    <li class="exame-item">ACIDO VALPROICO</li>
+                    <li class="exame-item">ACIDO VANIL MANDELICO - 24HS</li>
+                    <li class="exame-item">ACIDO VANILMANDELICO</li>
+                    <li class="exame-item">ACTH APOS SUPRESSAO COM DEXAMETASONA</li>
+                    <li class="exame-item">ALBUMINA</li>
+                    <li class="exame-item">ALDOLASE</li>
+                    <li class="exame-item">ALDOSTERONA</li>
+                    <li class="exame-item">ALFA 1 ANTI-TRIPSINA</li>
+                    <li class="exame-item">ALFA 1 GLICOPROTEINA ACIDA</li>
+                    <li class="exame-item">ALFA FETOPROTEINAS</li>
+                    <li class="exame-item">ALFA-1 ANTITRIPSINA EM FEZES</li>
+                    <li class="exame-item">ALUMINIO</li>
+                    <li class="exame-item">AMEBIASE</li>
+                    <li class="exame-item">AMILASE</li>
+                    <li class="exame-item">AMINOACIDOS</li>
+                    <li class="exame-item">AMINOACIDURIAS - DOSAGEM- ERROS INATOS MET</li>
+                    <li class="exame-item">AMONIA</li>
+                    <li class="exame-item">ANCA C</li>
+                    <li class="exame-item">ANDROSTENEDIONA</li>
+                    <li class="exame-item">ANFETAMINAS - TESTE DE TRIAGEM (URINA RECENTE)</li>
+                    <li class="exame-item">ANTI CCP</li>
+                    <li class="exame-item">ANTI CORPO ANTI TETANO</li>
+                    <li class="exame-item">ANTI ENDOMISIO IGA</li>
+                    <li class="exame-item">ANTI ENDOMISIO IGG</li>
+                    <li class="exame-item">ANTI ENDOMISIO IGM</li>
+                    <li class="exame-item">ANTI HIV 1 E 2 TRIAGEM</li>
+                    <li class="exame-item">ANTI ILHOTAS ( ANTI - CELULAS BETA PANCREÁTICAS)</li>
+                    <li class="exame-item">ANTI INSULINA</li>
+                    <li class="exame-item">ANTI JO-1</li>
+                    <li class="exame-item">ANTI TRANSGLUTAMINASE TISSULAR IgA</li>
+                    <li class="exame-item">ANTI TRANSGLUTAMINASE TISSULAR IgG</li>
+                    <li class="exame-item">ANTI Xa COAGULAÇAÕ</li>
+                    <li class="exame-item">ANTI-ADRENAL</li>
+                    <li class="exame-item">ANTI-SCL-70</li>
+                    <li class="exame-item">ANTIBIOGRAMA</li>
+                    <li class="exame-item">ANTICOAGULANTE LUPICO</li>
+                    <li class="exame-item">ANTICOAGULANTE LUPICO - FOSFOLIPIDES HEXAGONAL</li>
+                    <li class="exame-item">ANTICORPO INIBIDOR DE TSH (TRAB)</li>
+                    <li class="exame-item">ANTICORPOS ANTI CHIKUNGUNYA (IGG E IGM)</li>
+                    <li class="exame-item">ANTICORPOS ANTI LEISHMANIOSE IGG E IGM</li>
+                    <li class="exame-item">ANTICORPOS ANTI NUCLEOSSOMO</li>
+                    <li class="exame-item">ANTICORPOS ANTI PNEUMOCOCOS IGG</li>
+                    <li class="exame-item">ANTICORPOS ANTI RAIVA</li>
+                    <li class="exame-item">ANTICORPOS ANTI-PEROXIDASE</li>
+                    <li class="exame-item">ANTICORPOS ANTI-TIREOGLOBULINA</li>
+                    <li class="exame-item">ANTICORPOS IgM ANTI BORRELIA BURGDORFERI - LYME [BOR-M]</li>
+                    <li class="exame-item">ANTIESTREPTOLISINA "O" - AEO</li>
+                    <li class="exame-item">ANTIGENO CARCINOEMBRIONARIO - CEA</li>
+                    <li class="exame-item">ANTIGENO HLA-B-27</li>
+                    <li class="exame-item">ANTITROMBINA III</li>
+                    <li class="exame-item">APO A1</li>
+                    <li class="exame-item">APOLIPOPROTEINA A-1</li>
+                    <li class="exame-item">APOLIPOPROTEINA B</li>
+                    <li class="exame-item">ASPERGILLUS SP</li>
+                    <li class="exame-item">ATIVIDADE PLASMATICA DE RENINA POSTURAL</li>
+                    <li class="exame-item">AUTO ANTICORPOS ANTI SM</li>
+                    <li class="exame-item">BAAR - BACILOSCOPIA (HANSENÍASE) [BAAR-H]</li>
+                    <li class="exame-item">BAAR-BK DIVERSOS MATERIAIS URINA</li>
+                    <li class="exame-item">BARBITURICOS</li>
+                    <li class="exame-item">BENZODIAZEPINICOS</li>
+                    <li class="exame-item">BETA 2 GLICOPROTEINA 1</li>
+                    <li class="exame-item">BETA 2 MICROGLOBULINA</li>
+                    <li class="exame-item">BETA 2 MICROGLOBULINA (URINA 24 HORAS)</li>
+                    <li class="exame-item">BETA HCG - QUALITATIVO</li>
+                    <li class="exame-item">BETA HCG - QUANTITATIVO</li>
+                    <li class="exame-item">BETA-2-GLICOPROTEÍNA I</li>
+                    <li class="exame-item">BICARBONATOS</li>
+                    <li class="exame-item">BIG PROLACTINA</li>
+                    <li class="exame-item">BILIRRUBINAS</li>
+                    <li class="exame-item">BIOPSIA</li>
+                    <li class="exame-item">BIOPSIA - PEÇA CIRURGICA</li>
+                    <li class="exame-item">BIOPSIA - PESQUISA PARA HELICOBACTER PYLORI</li>
+                    <li class="exame-item">BIOTINIDASE NEONATAL</li>
+                    <li class="exame-item">BK - BACILO DE KOCH</li>
+                    <li class="exame-item">BLASTOMICOSE SUL AMERICANA</li>
+                    <li class="exame-item">BORDETELLA PERTUSSIS IGG</li>
+                    <li class="exame-item">BORDETELLA PERTUSSIS IGM</li>
+                    <li class="exame-item">BRUCELOSE</li>
+                    <li class="exame-item">BRUCELOSE IgG</li>
+                    <li class="exame-item">BRUCELOSE IgM</li>
+                    <li class="exame-item">C282Y</li>
+                    <li class="exame-item">CA 125</li>
+                    <li class="exame-item">CA 15-3</li>
+                    <li class="exame-item">CA 19-9</li>
+                    <li class="exame-item">CA 50</li>
+                    <li class="exame-item">CA 72-4</li>
+                    <li class="exame-item">CADEIA KAPPA/LAMBDA LEVE LIVRE</li>
+                    <li class="exame-item">CADMIO URINÁRIO (AMOSTRA ISOLADA)</li>
+                    <li class="exame-item">CALCIO</li>
+                    <li class="exame-item">CALCIO ( URINA ALEATORIA )</li>
+                    <li class="exame-item">CALCIO IONICO</li>
+                    <li class="exame-item">CALCITONINA</li>
+                    <li class="exame-item">CALCULO</li>
+                    <li class="exame-item">CALPROTECTINA</li>
+                    <li class="exame-item">CANABIONOIDES - TESTE DE TRIAGEM (URINA RECENTE)</li>
+                    <li class="exame-item">CANDIDA ALBICANS</li>
+                    <li class="exame-item">CANDIDA SP</li>
+                    <li class="exame-item">CAPACIDADE TOTAL DE LIGACAO DO FERRO</li>
+                    <li class="exame-item">CARBAMAZEPINA</li>
+                    <li class="exame-item">CARBOXIHEMOGLOBINA</li>
+                    <li class="exame-item">CARDIOLIPINA IGA</li>
+                    <li class="exame-item">CARDIOLIPINA IGG</li>
+                    <li class="exame-item">CARDIOLIPINA IGM</li>
+                    <li class="exame-item">CARIOTIPO COM BANDA G</li>
+                    <li class="exame-item">CARNITINA LIVRE</li>
+                    <li class="exame-item">CARNITINA TOTAL E LIVRE</li>
+                    <li class="exame-item">CATECOLAMINAS - FRACOES (URINA 24 HORAS)</li>
+                    <li class="exame-item">CAXUMBA IGG</li>
+                    <li class="exame-item">CAXUMBA IGM</li>
+                    <li class="exame-item">CD4 - SUBPOPULACAO LINFOCITARIA</li>
+                    <li class="exame-item">CELULA PARIETAL</li>
+                    <li class="exame-item">CENTROMERO</li>
+                    <li class="exame-item">CERULOPLASMINA</li>
+                    <li class="exame-item">CHLAMYDIA TRACHOMATIS</li>
+                    <li class="exame-item">CHLAMYDIA TRACHOMATIS - IMUNOFLUORESCENC</li>
+                    <li class="exame-item">CHLAMYDIA TRACHOMATIS - NEISSERIA GONORRHOEAE</li>
+                    <li class="exame-item">CHLAMYDIA TRACHOMATIS IGA</li>
+                    <li class="exame-item">CHLAMYDIA TRACHOMATIS IGG</li>
+                    <li class="exame-item">CHLAMYDIA TRACHOMATIS IGM</li>
+                    <li class="exame-item">CHUMBO</li>
+                    <li class="exame-item">CICLOSPORINA</li>
+                    <li class="exame-item">CISTINA</li>
+                    <li class="exame-item">CITOLOGIA DE ESCARRO</li>
+                    <li class="exame-item">CITOLOGIA ONCÓTICA</li>
+                    <li class="exame-item">CITOMEGALOVIRUS - TESTE DE AVIDEZ IgG</li>
+                    <li class="exame-item">CITOMEGALOVIRUS IGG</li>
+                    <li class="exame-item">CITOMEGALOVIRUS IGM</li>
+                    <li class="exame-item">CLEARENCE DE CREATININA - URINA 24HS</li>
+                    <li class="exame-item">CLEARENCE DE UREIA (URINA 24 HORAS)</li>
+                    <li class="exame-item">CLORETOS</li>
+                    <li class="exame-item">CLORETOS (URINA 24 HORAS)</li>
+                    <li class="exame-item">CLORETOS (URINA AMOSTRA UNICA/RECENTE)</li>
+                    <li class="exame-item">CLOSTRIDIUM DIFFICILE - TOXINA A E B</li>
+                    <li class="exame-item">COAGULOGRAMA COMPLETO</li>
+                    <li class="exame-item">COBRE</li>
+                    <li class="exame-item">COBRE (URINA 24 HORAS)</li>
+                    <li class="exame-item">COBRE (URINA AMOSTRA UNICA/RECENTE)</li>
+                    <li class="exame-item">COCAINA - TESTE DE TRIAGEM (URINA RECENTE)</li>
+                    <li class="exame-item">COLESTEROL HDL</li>
+                    <li class="exame-item">COLESTEROL LDL</li>
+                    <li class="exame-item">COLESTEROL TOTAL</li>
+                    <li class="exame-item">COLESTEROL VLDL</li>
+                    <li class="exame-item">COLINESTERASE ERITROCITARIA</li>
+                    <li class="exame-item">COLINESTERASE PLASMARICA - SUCEN</li>
+                    <li class="exame-item">COLINESTERASE PLASMATICA</li>
+                    <li class="exame-item">COMPLEMENTO C1q</li>
+                    <li class="exame-item">COMPLEMENTO SERICO C2</li>
+                    <li class="exame-item">COMPLEMENTO SERICO C3</li>
+                    <li class="exame-item">COMPLEMENTO SERICO C4</li>
+                    <li class="exame-item">COMPLEMENTO SÉRICO DO CH-50</li>
+                    <li class="exame-item">COMPLEMENTO SERICO TOTAL - CH-100</li>
+                    <li class="exame-item">COOMBS DIRETO</li>
+                    <li class="exame-item">COOMBS INDIRETO</li>
+                    <li class="exame-item">COPROCULTURA</li>
+                    <li class="exame-item">COPROLOGICO FUNCIONAL</li>
+                    <li class="exame-item">CORTISOL</li>
+                    <li class="exame-item">CORTISOL APOS DEXAMETASONA - OVERNIGHT</li>
+                    <li class="exame-item">CORTISOL URINARIO - 24hs</li>
+                    <li class="exame-item">COXSACKIE A9 IgG e IgM</li>
+                    <li class="exame-item">CREATININA</li>
+                    <li class="exame-item">CREATININA (URINA 12 HORAS)</li>
+                    <li class="exame-item">CREATININA (URINA 24 HORAS)</li>
+                    <li class="exame-item">CREATININA (URINA AMOSTRA UNICA/RECENTE)</li>
+                    <li class="exame-item">CREATINOFOSFOQUINASE MB - CK MB</li>
+                    <li class="exame-item">CREATINOFOSFOQUINASE TOTAL - CPK</li>
+                    <li class="exame-item">CROMATOGRAFIA</li>
+                    <li class="exame-item">CROMO</li>
+                    <li class="exame-item">CROMO (URINA 24 HORAS)</li>
+                    <li class="exame-item">CROMO (URINA AMOSTRA UNICA/RECENTE)</li>
+                    <li class="exame-item">CROMOGRANINA A</li>
+                    <li class="exame-item">CRYPTOCOCCUS NEOFORMANS (AGLUTINACAO DIRETA)</li>
+                    <li class="exame-item">CULTURA BACTERIANA</li>
+                    <li class="exame-item">CULTURA PARA BACTÉRIAS AERÓBICAS</li>
+                    <li class="exame-item">CURVA DE TOLERANCIA A GLICOSE</li>
+                    <li class="exame-item">CURVA GLICÊMICA</li>
+                    <li class="exame-item">CURVA INSULINICA</li>
+                    <li class="exame-item">DEHIDROEPIANDROSTERONA - DHEA</li>
+                    <li class="exame-item">DEHIDROGENASE LACTICA</li>
+                    <li class="exame-item">DEMIRO D</li>
+                    <li class="exame-item">DENGUE IGG</li>
+                    <li class="exame-item">DENGUE IGM</li>
+                    <li class="exame-item">DIAZEPAM</li>
+                    <li class="exame-item">DIFENILHIDANTOINA</li>
+                    <li class="exame-item">DIGOXINA</li>
+                    <li class="exame-item">DIHIDROTESTOSTERONA</li>
+                    <li class="exame-item">DISMORFISMO ERITROCITARIO</li>
+                    <li class="exame-item">DNA - TESTE DE PATERNIDADE</li>
+                    <li class="exame-item">DNA NATIVO</li>
+                    <li class="exame-item">DOSAGEM DE CLONAZEPAM</li>
+                    <li class="exame-item">DOSAGEM DE CTX</li>
+                    <li class="exame-item">DOSAGEM DE TRIPTOFANO</li>
+                    <li class="exame-item">DOSAGEM EVEROLIMUS</li>
+                    <li class="exame-item">DREPANOCITOS</li>
+                    <li class="exame-item">ELETROFORESE DE HEMOGLOBINA</li>
+                    <li class="exame-item">ELETROFORESE DE PROTEINAS</li>
+                    <li class="exame-item">ELETROFORESE DE PROTEINAS NA URINA</li>
+                    <li class="exame-item">ELETROFORESE DE PROTEINAS NA URINA- 24 HORAS</li>
+                    <li class="exame-item">ENTEROBIUS VERMICULARES</li>
+                    <li class="exame-item">ENXOFRE</li>
+                    <li class="exame-item">EPSTEIN BARR IGG</li>
+                    <li class="exame-item">EPSTEIN BARR IGM</li>
+                    <li class="exame-item">ERITROGRAMA</li>
+                    <li class="exame-item">ERITROPOIETINA</li>
+                    <li class="exame-item">ESQUISTOSSOMOSE</li>
+                    <li class="exame-item">ESQUISTOSSOMOSE (IMUNOFLUORESCÊNCIA)</li>
+                    <li class="exame-item">ESTANHO NA URINA</li>
+                    <li class="exame-item">ESTRADIOL (E2)</li>
+                    <li class="exame-item">ESTRIOL</li>
+                    <li class="exame-item">ESTRONA</li>
+                    <li class="exame-item">ESTUDO MOLECULAR DA MUTACAO A1298C</li>
+                    <li class="exame-item">ETANOL</li>
+                    <li class="exame-item">ETANOL URINÁRIO</li>
+                    <li class="exame-item">EXAME MICOLOGICO DIRETO</li>
+                    <li class="exame-item">FATOR ANTI-NUCLEAR (HEP2)</li>
+                    <li class="exame-item">FATOR REUMATOIDE - FR</li>
+                    <li class="exame-item">FATOR V LEIDEN</li>
+                    <li class="exame-item">FATOR VIII FUNCIONAL</li>
+                    <li class="exame-item">FEBRE MACULOSA - IGG</li>
+                    <li class="exame-item">FEBRE MACULOSA - IGM</li>
+                    <li class="exame-item">FENCICLIDINA - PCP</li>
+                    <li class="exame-item">FENILALANINA</li>
+                    <li class="exame-item">FENILALANINA - PKU - QUANTITATIVA (SANGUE)</li>
+                    <li class="exame-item">FENITOINA - DIFENILHIDANTOINA</li>
+                    <li class="exame-item">FENOBARBITAL</li>
+                    <li class="exame-item">FENOL URINÁRIO</li>
+                    <li class="exame-item">FENOTIPAGEM DE LINFOCITOS (CD19)</li>
+                    <li class="exame-item">FERRITINA SERICA</li>
+                    <li class="exame-item">FERRO SERICO</li>
+                    <li class="exame-item">FIBRINOGENIO</li>
+                    <li class="exame-item">FOSFATASE ACIDA PROSTATICA</li>
+                    <li class="exame-item">FOSFATASE ACIDA TOTAL</li>
+                    <li class="exame-item">FOSFATASE ALCALINA</li>
+                    <li class="exame-item">FOSFATASE ALCALINA OSSEA</li>
+                    <li class="exame-item">FOSFOLIPIDEOS</li>
+                    <li class="exame-item">FOSFORO</li>
+                    <li class="exame-item">FOSFORO (URINA 24 HORAS)</li>
+                    <li class="exame-item">FOSFORO (URINA AMOSTRA ÚNICA/ RECENTE)</li>
+                    <li class="exame-item">FRUTOSAMINA</li>
+                    <li class="exame-item">FSH - HORMONIO FOLICULO ESTIMULANTE</li>
+                    <li class="exame-item">FTA-ABS - TREPONEMA PALLIDUM IGG</li>
+                    <li class="exame-item">FTA-ABS - TREPONEMA PALLIDUM IGM</li>
+                    <li class="exame-item">FUNGOS</li>
+                    <li class="exame-item">G6PD NEONATAL - GLICOSE 6 FOSFATO DEHIDROGENASE</li>
+                    <li class="exame-item">GAD</li>
+                    <li class="exame-item">GALACTOSE TOTAL</li>
+                    <li class="exame-item">GAMA GLUTAMIL TRANSFERASE</li>
+                    <li class="exame-item">GARDNERELLA</li>
+                    <li class="exame-item">GASTRINA</li>
+                    <li class="exame-item">GH BASAL E APÓS ESTIMULO COM CLONIDINA</li>
+                    <li class="exame-item">GIARDIA LAMBLIA - ELISA</li>
+                    <li class="exame-item">GLIADINA IGA</li>
+                    <li class="exame-item">GLIADINA IGG</li>
+                    <li class="exame-item">GLIADINA IGM</li>
+                    <li class="exame-item">GLICOHEMOGLOBINA - HBA1C</li>
+                    <li class="exame-item">GLICOSE</li>
+                    <li class="exame-item">GLICOSE (URINA AMOSTRA UNICA/RECENTE)</li>
+                    <li class="exame-item">GLICOSE 2 HORAS POS PRANDIAL</li>
+                    <li class="exame-item">GLICOSE 6-FOSFATO DESIDROGENASE</li>
+                    <li class="exame-item">GLICOSE 60 MINUTOS APOS 50g DE DEXTROSOL</li>
+                    <li class="exame-item">GLICOSE 60 MINUTOS APOS 75G DE DEXTROSOL</li>
+                    <li class="exame-item">GLOBULINA TRANSP TIROXINA-TBG</li>
+                    <li class="exame-item">GLUCAGON</li>
+                    <li class="exame-item">GLUTATIONA PEROXIDASE</li>
+                    <li class="exame-item">GORDURA FECAL</li>
+                    <li class="exame-item">GRAM</li>
+                    <li class="exame-item">GRUPO SANGUINEO + FATOR RH</li>
+                    <li class="exame-item">HAEMOPHILUS DUCREYI</li>
+                    <li class="exame-item">HAPTOGLOBINA</li>
+                    <li class="exame-item">HAV IGG</li>
+                    <li class="exame-item">HAV IGM</li>
+                    <li class="exame-item">HAV TOTAL</li>
+                    <li class="exame-item">HBC IGG</li>
+                    <li class="exame-item">HBC IGM</li>
+                    <li class="exame-item">HBC TOTAL</li>
+                    <li class="exame-item">HBE</li>
+                    <li class="exame-item">HBEAG</li>
+                    <li class="exame-item">HBS</li>
+                    <li class="exame-item">HBSAG - ANTIGENO AUSTRALIA</li>
+                    <li class="exame-item">HBV</li>
+                    <li class="exame-item">HCV</li>
+                    <li class="exame-item">HDV</li>
+                    <li class="exame-item">HELICOBACTER PYLORI IGG</li>
+                    <li class="exame-item">HELICOBACTER PYLORI IGM</li>
+                    <li class="exame-item">HEMACIAS</li>
+                    <li class="exame-item">HEMATOCRITO</li>
+                    <li class="exame-item">HEMOGLOBINA</li>
+                    <li class="exame-item">HEMOGLOBINOPATIAS - TRIAGEM NEONATAL</li>
+                    <li class="exame-item">HEMOGRAMA COMPLETO</li>
+                    <li class="exame-item">HEMOSSEDIMENTACAO</li>
+                    <li class="exame-item">HERPESVIRUS SIMPLES I E II IgG (ELISA)</li>
+                    <li class="exame-item">HEV</li>
+                    <li class="exame-item">HGH BASAL - HORMONIO DO CRESCIMENTO</li>
+                    <li class="exame-item">HGH BASAL E APOS ESTIMULO COM CLONIDINA (ATENSINA)</li>
+                    <li class="exame-item">HGH BASAL E APOS ESTIMULO COM DEXAMETASONA</li>
+                    <li class="exame-item">HGH BASAL E APOS ESTIMULO COM EXERCíCIO</li>
+                    <li class="exame-item">HISTONA</li>
+                    <li class="exame-item">HISTOPLASMA CAPSULATUM</li>
+                    <li class="exame-item">HIV</li>
+                    <li class="exame-item">HIV 1 E 2 DUO PESQUISA DE ANTIGENO E ANTIC. (ELFA)</li>
+                    <li class="exame-item">HIV 1 OU 2</li>
+                    <li class="exame-item">HIV-1</li>
+                    <li class="exame-item">HOMOCISTEINA</li>
+                    <li class="exame-item">HORMONIO ADRENOCORTICOTROFICO - ACTH</li>
+                    <li class="exame-item">HORMONIO ANTI-MULLERIANO</li>
+                    <li class="exame-item">HORMONIO ANTIDIURETICO (ADH)</li>
+                    <li class="exame-item">HORMONIO DO CRESCIMENTO - HGH</li>
+                    <li class="exame-item">HORMONIO DO CRESCIMENTO – HGH2</li>
+                    <li class="exame-item">HORMONIO FOLICULO ESTIMULANTE - FSH</li>
+                    <li class="exame-item">HORMONIO LUTEINIZANTE - LH</li>
+                    <li class="exame-item">HPV</li>
+                    <li class="exame-item">HTLV 1 E 2</li>
+                    <li class="exame-item">HTLV 1 OU 2 PESQUISA DE ANTICORPOS</li>
+                    <li class="exame-item">HTLV I E II ANTICORPOS</li>
+                    <li class="exame-item">HTLV-1</li>
+                    <li class="exame-item">IGE ESPECIFICA * CONSULTAR ESPECIFICAÇÕES</li>
+                    <li class="exame-item">IGE MULTIPLO * CONSULTAR ESPECIFICAÇÕES</li>
+                    <li class="exame-item">IGE TOTAL</li>
+                    <li class="exame-item">IGE-DIPIRONA C294SA</li>
+                    <li class="exame-item">IGF-1 - SOMATOMEDINA C (QLE)</li>
+                    <li class="exame-item">IGF-1 - SOMATOMEDINA C (RIE)</li>
+                    <li class="exame-item">IGFBP-3 (PROTEÍNA LIGADORA-3 DO IGF)</li>
+                    <li class="exame-item">IMUNOFIXACAO EM SORO</li>
+                    <li class="exame-item">IMUNOFIXACAO NA URINA</li>
+                    <li class="exame-item">IMUNOFIXACAO URINA 24 HORAS</li>
+                    <li class="exame-item">IMUNOGLOBULINA</li>
+                    <li class="exame-item">IMUNOGLOBULINA IGA</li>
+                    <li class="exame-item">IMUNOGLOBULINA IGD</li>
+                    <li class="exame-item">IMUNOGLOBULINA IGG</li>
+                    <li class="exame-item">IMUNOGLOBULINA IGM</li>
+                    <li class="exame-item">IMUNOGLOBULINAS</li>
+                    <li class="exame-item">IMUNOHISTOQUIMICA GERAL</li>
+                    <li class="exame-item">INDICE DE HOMA</li>
+                    <li class="exame-item">INDICE DE SATURACAO DA TRANSFERRINA</li>
+                    <li class="exame-item">INDICE DE TIROXINA LIVRE - T3 RETENCAO + T4 TOTAL</li>
+                    <li class="exame-item">INIBIDOR DE C1 ESTERASE</li>
+                    <li class="exame-item">INSULINA</li>
+                    <li class="exame-item">IODO NA URINA 24HS</li>
+                    <li class="exame-item">ISOENZIMAS DO CPK</li>
+                    <li class="exame-item">LAMOTRIGINA</li>
+                    <li class="exame-item">LEPTINA</li>
+                    <li class="exame-item">LEPTOSPIROSE - SORO AGLUTINAÇÃO</li>
+                    <li class="exame-item">LEPTOSPIROSE IGG</li>
+                    <li class="exame-item">LEPTOSPIROSE IGM</li>
+                    <li class="exame-item">LEUCOCITOS - GLOBAL</li>
+                    <li class="exame-item">LEUCOGRAMA</li>
+                    <li class="exame-item">LH - HORMONIO LUTEINIZANTE</li>
+                    <li class="exame-item">LIPASE</li>
+                    <li class="exame-item">LIPIDES TOTAIS</li>
+                    <li class="exame-item">LIPOPROTEINA - A</li>
+                    <li class="exame-item">LITIO</li>
+                    <li class="exame-item">LKM-1</li>
+                    <li class="exame-item">LYME</li>
+                    <li class="exame-item">MACHADO GUERREIRO ELISA</li>
+                    <li class="exame-item">MACHADO GUERREIRO IGG</li>
+                    <li class="exame-item">MACHADO GUERREIRO IGM</li>
+                    <li class="exame-item">MACROPROLACTINA</li>
+                    <li class="exame-item">MAGNESIO</li>
+                    <li class="exame-item">MAGNESIO (URINA 24 HORAS)</li>
+                    <li class="exame-item">MAGNESIO (URINA AMOSTRA ÚNICA/RECENTE/ISO</li>
+                    <li class="exame-item">MANGANES</li>
+                    <li class="exame-item">MANGANES (URINA 24 HORAS)</li>
+                    <li class="exame-item">MANGANES (URINA AMOSTRA ÚNICA/RECENTE)</li>
+                    <li class="exame-item">MERCURIO</li>
+                    <li class="exame-item">MERCURIO (URINA 24 HORAS)</li>
+                    <li class="exame-item">MERCURIO (URINA AMOSTRA UNICA/RECENTE)</li>
+                    <li class="exame-item">METAHEMOGLOBINA</li>
+                    <li class="exame-item">METANEFRINAS FRACIONADAS NA URINA</li>
+                    <li class="exame-item">METANEFRINAS PLASMATICAS- SERICA</li>
+                    <li class="exame-item">METANOL URINARIO</li>
+                    <li class="exame-item">METILETILCETONA</li>
+                    <li class="exame-item">MI-2</li>
+                    <li class="exame-item">MICOBACTERIAS</li>
+                    <li class="exame-item">MICROALBUMINURIA</li>
+                    <li class="exame-item">MICROALBUMINURIA (URINA ALEATORIA)</li>
+                    <li class="exame-item">MICROALBUMINURIA 24HS</li>
+                    <li class="exame-item">MICROSSOMAL</li>
+                    <li class="exame-item">MITOCONDRIA</li>
+                    <li class="exame-item">MONOTESTE - MNI</li>
+                    <li class="exame-item">MUCOPROTEINAS</li>
+                    <li class="exame-item">MULTIPLO DE EPITELIOS</li>
+                    <li class="exame-item">MUSCULO ESTRIADO</li>
+                    <li class="exame-item">MUSCULO LISO</li>
+                    <li class="exame-item">MUTACAO GENE DA METILENOTETRAHIDROFOLATO REDUTASE</li>
+                    <li class="exame-item">MUTACAO NO GENE DA PROTROMBINA</li>
+                    <li class="exame-item">MYCOPLASMA PNEUMONIAE IgG</li>
+                    <li class="exame-item">MYCOPLASMA PNEUMONIAE IgM</li>
+                    <li class="exame-item">NEISSERIA GONORRHOEAE</li>
+                    <li class="exame-item">NEUTROFILOS</li>
+                    <li class="exame-item">NICOTINA- DOSAGEM DE COTININA EM URINA</li>
+                    <li class="exame-item">NIQUEL</li>
+                    <li class="exame-item">NIQUEL (URINA 24 HORAS)</li>
+                    <li class="exame-item">NIQUEL (URINA AMOSTRA UNICA/RECENTE)</li>
+                    <li class="exame-item">NT-proBNP-PEPTIDEO NATRIURETICO CEREBRAL</li>
+                    <li class="exame-item">OOGRAMA</li>
+                    <li class="exame-item">OPIACEOS - TESTE DE TRIAGEM (URINA RECENTE)</li>
+                    <li class="exame-item">OSMOLALIDADE</li>
+                    <li class="exame-item">OSMOLALIDADE URINÁRIA 24H</li>
+                    <li class="exame-item">OXIURUS</li>
+                    <li class="exame-item">PARASITOLOGICO DE FEZES</li>
+                    <li class="exame-item">PARATORMONIO - PTH INTACTO (MOLECULA INTEIRA)</li>
+                    <li class="exame-item">PARVOVIRUS B19 IGG</li>
+                    <li class="exame-item">PARVOVIRUS B19 IGM</li>
+                    <li class="exame-item">PCR- EBV QUANTITATIVO</li>
+                    <li class="exame-item">PEPTIDEO C</li>
+                    <li class="exame-item">PLAQUETAS</li>
+                    <li class="exame-item">PLASMA RICO EM PLAQUETAS</li>
+                    <li class="exame-item">POLIMORFISMO DO PAI-1</li>
+                    <li class="exame-item">POTASSIO</li>
+                    <li class="exame-item">POTASSIO (URINA 24 HORAS)</li>
+                    <li class="exame-item">PRO-BNP N TERMINAL</li>
+                    <li class="exame-item">PROGESTERONA</li>
+                    <li class="exame-item">PROLACTINA</li>
+                    <li class="exame-item">PROLACTINA APÓS DILUIÇÃO</li>
+                    <li class="exame-item">PROTEINA C REATIVA - PCR</li>
+                    <li class="exame-item">PROTEINA DE BENCE JONES</li>
+                    <li class="exame-item">PROTEINA P RIBOSSOMAL</li>
+                    <li class="exame-item">PROTEINA S</li>
+                    <li class="exame-item">PROTEINAS</li>
+                    <li class="exame-item">PROTEINAS DE BENCE JONES (URINA 24 HORAS)</li>
+                    <li class="exame-item">PROTEINAS TOTAIS E FRACIONADAS</li>
+                    <li class="exame-item">PROTEINAS/CREATININA</li>
+                    <li class="exame-item">PROTEINURIA (URINA 24 HORAS)</li>
+                    <li class="exame-item">PROTEINURIA AMOSTRA ALEATORIA</li>
+                    <li class="exame-item">PSA LIVRE</li>
+                    <li class="exame-item">PSA TOTAL</li>
+                    <li class="exame-item">PSA ULTRA SENSIVEL (EQM)</li>
+                    <li class="exame-item">RENINA</li>
+                    <li class="exame-item">RENINA - ATIVIDADE</li>
+                    <li class="exame-item">RETICULOCITOS</li>
+                    <li class="exame-item">RNP</li>
+                    <li class="exame-item">RUBEOLA - TESTE DE AVIDEZ IGG</li>
+                    <li class="exame-item">RUBEOLA IGG</li>
+                    <li class="exame-item">RUBEOLA IGM</li>
+                    <li class="exame-item">SANGUE OCULTO NAS FEZES</li>
+                    <li class="exame-item">SARAMPO IgG</li>
+                    <li class="exame-item">SARAMPO IgM</li>
+                    <li class="exame-item">SELENIO</li>
+                    <li class="exame-item">SEROTONINA TOTAL</li>
+                    <li class="exame-item">SEXAGEM FETAL</li>
+                    <li class="exame-item">SHBG - GLOBULINA LIGADORA DE HORMONIOS SEXUAIS</li>
+                    <li class="exame-item">SODIO</li>
+                    <li class="exame-item">SODIO (URINA 24 HORAS)</li>
+                    <li class="exame-item">SODIO URINA ALEATORIA</li>
+                    <li class="exame-item">SSA/RO</li>
+                    <li class="exame-item">SSB/LA</li>
+                    <li class="exame-item">STREPTOCOCCUS A</li>
+                    <li class="exame-item">STREPTOCOCCUS BETA HEMOLITICO DO GRUPO B</li>
+                    <li class="exame-item">SUBPOPULACAO LINFOCITARIA CD4 + CD8 + CD3</li>
+                    <li class="exame-item">SULFATO DE DEHIDROEPIANDROSTERONA</li>
+                    <li class="exame-item">SUPEROXIDO DISMUTASE</li>
+                    <li class="exame-item">T3 LIVRE</li>
+                    <li class="exame-item">T3 RETENCAO - CAPTACAO OU UPTAKE</li>
+                    <li class="exame-item">T3 REVERSO</li>
+                    <li class="exame-item">T3 TOTAL</li>
+                    <li class="exame-item">T4 LIVRE</li>
+                    <li class="exame-item">T4 NEONATAL</li>
+                    <li class="exame-item">T4 TOTAL</li>
+                    <li class="exame-item">TACROLIMUS</li>
+                    <li class="exame-item">TEMPO DE COAGULACAO</li>
+                    <li class="exame-item">TEMPO DE PROTROMBINA</li>
+                    <li class="exame-item">TEMPO DE SANGRIA</li>
+                    <li class="exame-item">TEMPO DE TROMBINA</li>
+                    <li class="exame-item">TEMPO DE TROMBOPLASTINA PARCIAL ATIVADO</li>
+                    <li class="exame-item">TEMPO E ATIVIDADE DE PROTROMBINA + RNI</li>
+                    <li class="exame-item">TESTE DE FALCIZAÇÃO</li>
+                    <li class="exame-item">TESTE DE TOLERÂCIA A LACTOSE</li>
+                    <li class="exame-item">TESTE DE TOLERANCIA A GLICOSE</li>
+                    <li class="exame-item">TESTE DO PEZINHO AMPLIADO</li>
+                    <li class="exame-item">TESTE DO PEZINHO BÁSICO</li>
+                    <li class="exame-item">TESTE DO PEZINHO MASTER</li>
+                    <li class="exame-item">TESTOSTERONA LIVRE</li>
+                    <li class="exame-item">TESTOSTERONA TOTAL</li>
+                    <li class="exame-item">TIREOGLOBULINA</li>
+                    <li class="exame-item">TOLERÂNCIA A GLICOSE - 50G DE DEXTROSOL</li>
+                    <li class="exame-item">TOLERÂNCIA A GLICOSE - 75G DE DEXTROSOL</li>
+                    <li class="exame-item">TOXICOLÓGICO</li>
+                    <li class="exame-item">TOXOCARA - ANTICORPOS IGG</li>
+                    <li class="exame-item">TOXOCARA - ANTICORPOS IGM</li>
+                    <li class="exame-item">TOXOPLASMOSE - TESTE DE AVIDEZ IGG</li>
+                    <li class="exame-item">TOXOPLASMOSE HEMAGLUTINACAO</li>
+                    <li class="exame-item">TOXOPLASMOSE IGA</li>
+                    <li class="exame-item">TOXOPLASMOSE IGG</li>
+                    <li class="exame-item">TOXOPLASMOSE IgG e IgM</li>
+                    <li class="exame-item">TOXOPLASMOSE IGM</li>
+                    <li class="exame-item">TPO</li>
+                    <li class="exame-item">TRANSAMINASE GLUTAMICO OXALACETICA</li>
+                    <li class="exame-item">TRANSAMINASE GLUTAMICO PIRUVICA</li>
+                    <li class="exame-item">TRANSFERRINA</li>
+                    <li class="exame-item">TREPONEMA PALLIDUM - HEMOAGLUTINACAO</li>
+                    <li class="exame-item">TREPONEMA PALLIDUM IGM NEONATAL - SIFILIS</li>
+                    <li class="exame-item">TRICLOROCOMPOSTOS TOTAIS (URINA FINAL JOR. TRAB.)</li>
+                    <li class="exame-item">TRICLOROCOMPOSTOS TOTAIS (URINA/TRABALHO)</li>
+                    <li class="exame-item">TRICLOROCOMPOSTOS TOTAIS URINARIO</li>
+                    <li class="exame-item">TRIGLICERIDES</li>
+                    <li class="exame-item">TRIPSINA NEONATAL</li>
+                    <li class="exame-item">TRYPANOSOMA CRUZI</li>
+                    <li class="exame-item">TRYPANOSOMA CRUZI IGM</li>
+                    <li class="exame-item">TRYPANOSSOMA CRUZI NEONATAL</li>
+                    <li class="exame-item">TSH NEONATAL</li>
+                    <li class="exame-item">TSH ULTRA SENSIVEL</li>
+                    <li class="exame-item">UREIA</li>
+                    <li class="exame-item">UREIA (URINA 24 HORAS)</li>
+                    <li class="exame-item">URINA ROTINA</li>
+                    <li class="exame-item">UROCULTURA</li>
+                    <li class="exame-item">V.D.R.L.</li>
+                    <li class="exame-item">VARICELA ZOSTER IGG</li>
+                    <li class="exame-item">VARICELA ZOSTER IGM</li>
+                    <li class="exame-item">VDRL</li>
+                    <li class="exame-item">VITAMINA A</li>
+                    <li class="exame-item">VITAMINA B1</li>
+                    <li class="exame-item">VITAMINA B12</li>
+                    <li class="exame-item">VITAMINA B2</li>
+                    <li class="exame-item">VITAMINA B3</li>
+                    <li class="exame-item">VITAMINA B5</li>
+                    <li class="exame-item">VITAMINA B6</li>
+                    <li class="exame-item">VITAMINA C</li>
+                    <li class="exame-item">VITAMINA E</li>
+                    <li class="exame-item">VITAMINA K</li>
+                    <li class="exame-item">WAALER ROSE</li>
+                    <li class="exame-item">ZIKA VIRUS</li>
+                    <li class="exame-item">ZIKA VIRUS ANTICORPOS IgM</li>
+                    <li class="exame-item">ZINCO (URINA 24 HORAS)</li>
+                    <li class="exame-item">ZINCO (URINA AMOSTRA UNICA/RECENTE)</li>
+                    <li class="exame-item">ZINCO ERITROCITARIO</li>
+                    <li class="exame-item">ZINCO PROTOPORFIRINA (SANGUE)</li>
                 </ul>
-
             </div>
-        </div>
 
-        <div class="container__logo">
-            <a href="index.html"><img class="logo" src="./img/logo.png" alt="Logo Laboratório Pampanelli"></a>
-        </div>
+        </section>
 
-        <div class="container__btn-cabecalho">
-            <button type="button" class="btn-cabecalho" onclick="openOverlay()">Contatos</button>
-        </div>
+    </div>
 
-        <div class="overlay" id="overlay">
-            <div class="content">
-                <h2 class="titulo__contato">Fale conosco</h2>
-                <a href="https://wa.me/message/HZTN34W3NHSTA1" class="link-btn">
-                    <img class="img__link-btn" src="./img/whatsapp.png" alt="Ícone">
-                    WhatsApp
-                </a>
-                <a href="tel:+551238822888" class="link-btn">
-                    <img class="img__link-btn" src="./img/contato.svg" alt="Ícone">
-                    Telefone
-                </a>
-                <a href="mailto:contato@laboratoriopampanelli.com.br" class="link-btn">
-                    <img class="img__link-btn" src="./img/email.png" alt="Ícone">
-                    E-mail
-                </a>
-                <button class="close-btn" onclick="closeOverlay()">Fechar</button>
-            </div>
-        </div>
+    <section class="container__footer">
 
-    </header>
-
-    <section class="container__exame">
-        <div class="exame__titulo">
-            <h1 class="titulo__exame">Exames</h1>
+        <h2 class="titulo__redes">Fique por dentro das novidades! Siga-nos nas redes sociais.</h2>
+        <div class="container__img-redes">
+            <a class="link__redes" href="https://www.facebook.com/profile.php?id=100063756602190&ref=pages_you_manage" target="_blank"><img class="img__redes" src="./img/facebook.png" alt="logo facebook"></a>
+            <a class="link__redes" href="https://www.instagram.com/laboratoriopampanelli/" target="_blank"><img class="img__redes" src="./img/instagram.png" alt="logo instagram"></a>
+            <a class="link__redes" href="https://api.whatsapp.com/message/HZTN34W3NHSTA1?autoload=1&app_absent=0" target="_blank"><img class="img__redes" src="./img/whatsapp2.png" alt="logo whatsapp"></a>
+        </div>  
+        <div class="container__img-certificacao">
+            <img class="img__certificacao" src="./img/controllab.jpg" alt="logo controllab"> 
+            <img class="img__certificacao" src="./img/pncq.jpg" alt="logo pncq"> 
         </div>
-
-        <div class="container__barra-pesquisa">
-            <form class="pesquisa__container">
-                <input type="text" id="pesquisaInput" placeholder="Buscar exames..."><a href="#"><img class="pesquisa__icone" id="icone__pesquisa" src="./img/lupa.png" alt="ícone de pesquisa"></a>
-            </form>
-        </div>
-        <div class="container__pesquisa">
-            <ul id="listaExames" class="lista-exames">
-                <li class="exame-item">ALFA HIDROXIPROGESTERONA NEONATAL</li>
-                <li class="exame-item">CETOSTEROIDES NEUTROS TOTAIS [17-KS]</li>
-                <li class="exame-item">ALFA-HIDROXIPROGESTERONA EM SORO</li>
-                <li class="exame-item">HIDROXILASE ALFA</li>
-                <li class="exame-item">HIDROXICALCIFEROL D3</li>
-                <li class="exame-item">HIDROXIVITAMINA D</li>
-                <li class="exame-item">ALFA ANDROSTENEDIOL GLICURONIDE</li>
-                <li class="exame-item">ACETILCOLINESTERASE</li>
-                <li class="exame-item">ACETONA URINARIA</li>
-                <li class="exame-item">ACIDO CITRICO ( URINA 24 HORAS )</li>
-                <li class="exame-item">ACIDO CITRICO - CITRATO (URINA 24 HORAS)</li>
-                <li class="exame-item">ACIDO CITRICO - CITRATO (URINA AMOSTRA UNICA/RECE)</li>
-                <li class="exame-item">ACIDO DELTA AMINO LEVULINICO (URINA 24 HORAS)</li>
-                <li class="exame-item">ACIDO DELTA AMINO LEVULINICO (URINA AMOSTRA UNICA)</li>
-                <li class="exame-item">ACIDO FENILGLIOXILICO (URINA 24 HORAS)</li>
-                <li class="exame-item">ACIDO FENILGLIOXILICO (URINA AMOSTRA UNICA/RECENT)</li>
-                <li class="exame-item">ACIDO FENILGLIOXILICO URINA</li>
-                <li class="exame-item">ACIDO FOLICO</li>
-                <li class="exame-item">ACIDO HIPURICO (AMOSTRA ISOLADA)</li>
-                <li class="exame-item">ACIDO HIPURICO (URINA 24 HORAS)</li>
-                <li class="exame-item">ACIDO HIPURICO PRÉ JORNADA</li>
-                <li class="exame-item">ACIDO LATICO - LACTATO</li>
-                <li class="exame-item">ACIDO MANDELICO ( AMOSTRA ISOLADA )</li>
-                <li class="exame-item">ACIDO METIL HIPURICO ( AMOSTRA ISOLADA )</li>
-                <li class="exame-item">ACIDO METIL HIPURICO (24 HORAS)</li>
-                <li class="exame-item">ACIDO METILMALONICO</li>
-                <li class="exame-item">ACIDO OXALICO - OXALATO</li>
-                <li class="exame-item">ACIDO OXALICO - OXALATO (URINA 24 HORAS)</li>
-                <li class="exame-item">ACIDO OXALICO - OXALATO (URINA ALEATÓRTIA)</li>
-                <li class="exame-item">ACIDO TRANSMUCONICO</li>
-                <li class="exame-item">ACIDO TRICLOROACETICO URINARIO</li>
-                <li class="exame-item">ACIDO URICO</li>
-                <li class="exame-item">ACIDO VALPROICO</li>
-                <li class="exame-item">ACIDO VANIL MANDELICO - 24HS</li>
-                <li class="exame-item">ACIDO VANILMANDELICO</li>
-                <li class="exame-item">ACTH APOS SUPRESSAO COM DEXAMETASONA</li>
-                <li class="exame-item">ALBUMINA</li>
-                <li class="exame-item">ALDOLASE</li>
-                <li class="exame-item">ALDOSTERONA</li>
-                <li class="exame-item">ALFA 1 ANTI-TRIPSINA</li>
-                <li class="exame-item">ALFA 1 GLICOPROTEINA ACIDA</li>
-                <li class="exame-item">ALFA FETOPROTEINAS</li>
-                <li class="exame-item">ALFA-1 ANTITRIPSINA EM FEZES</li>
-                <li class="exame-item">ALUMINIO</li>
-                <li class="exame-item">AMEBIASE</li>
-                <li class="exame-item">AMILASE</li>
-                <li class="exame-item">AMINOACIDOS</li>
-                <li class="exame-item">AMINOACIDURIAS - DOSAGEM- ERROS INATOS MET</li>
-                <li class="exame-item">AMONIA</li>
-                <li class="exame-item">ANCA C</li>
-                <li class="exame-item">ANDROSTENEDIONA</li>
-                <li class="exame-item">ANFETAMINAS - TESTE DE TRIAGEM (URINA RECENTE)</li>
-                <li class="exame-item">ANTI CCP</li>
-                <li class="exame-item">ANTI CORPO ANTI TETANO</li>
-                <li class="exame-item">ANTI ENDOMISIO IGA</li>
-                <li class="exame-item">ANTI ENDOMISIO IGG</li>
-                <li class="exame-item">ANTI ENDOMISIO IGM</li>
-                <li class="exame-item">ANTI HIV 1 E 2 TRIAGEM</li>
-                <li class="exame-item">ANTI ILHOTAS ( ANTI - CELULAS BETA PANCREÁTICAS)</li>
-                <li class="exame-item">ANTI INSULINA</li>
-                <li class="exame-item">ANTI JO-1</li>
-                <li class="exame-item">ANTI TRANSGLUTAMINASE TISSULAR IgA</li>
-                <li class="exame-item">ANTI TRANSGLUTAMINASE TISSULAR IgG</li>
-                <li class="exame-item">ANTI Xa COAGULAÇAÕ</li>
-                <li class="exame-item">ANTI-ADRENAL</li>
-                <li class="exame-item">ANTI-SCL-70</li>
-                <li class="exame-item">ANTIBIOGRAMA</li>
-                <li class="exame-item">ANTICOAGULANTE LUPICO</li>
-                <li class="exame-item">ANTICOAGULANTE LUPICO - FOSFOLIPIDES HEXAGONAL</li>
-                <li class="exame-item">ANTICORPO INIBIDOR DE TSH (TRAB)</li>
-                <li class="exame-item">ANTICORPOS ANTI CHIKUNGUNYA (IGG E IGM)</li>
-                <li class="exame-item">ANTICORPOS ANTI LEISHMANIOSE IGG E IGM</li>
-                <li class="exame-item">ANTICORPOS ANTI NUCLEOSSOMO</li>
-                <li class="exame-item">ANTICORPOS ANTI PNEUMOCOCOS IGG</li>
-                <li class="exame-item">ANTICORPOS ANTI RAIVA</li>
-                <li class="exame-item">ANTICORPOS ANTI-PEROXIDASE</li>
-                <li class="exame-item">ANTICORPOS ANTI-TIREOGLOBULINA</li>
-                <li class="exame-item">ANTICORPOS IgM ANTI BORRELIA BURGDORFERI - LYME [BOR-M]</li>
-                <li class="exame-item">ANTIESTREPTOLISINA "O" - AEO</li>
-                <li class="exame-item">ANTIGENO CARCINOEMBRIONARIO - CEA</li>
-                <li class="exame-item">ANTIGENO HLA-B-27</li>
-                <li class="exame-item">ANTITROMBINA III</li>
-                <li class="exame-item">APO A1</li>
-                <li class="exame-item">APOLIPOPROTEINA A-1</li>
-                <li class="exame-item">APOLIPOPROTEINA B</li>
-                <li class="exame-item">ASPERGILLUS SP</li>
-                <li class="exame-item">ATIVIDADE PLASMATICA DE RENINA POSTURAL</li>
-                <li class="exame-item">AUTO ANTICORPOS ANTI SM</li>
-                <li class="exame-item">BAAR - BACILOSCOPIA (HANSENÍASE) [BAAR-H]</li>
-                <li class="exame-item">BAAR-BK DIVERSOS MATERIAIS URINA</li>
-                <li class="exame-item">BARBITURICOS</li>
-                <li class="exame-item">BENZODIAZEPINICOS</li>
-                <li class="exame-item">BETA 2 GLICOPROTEINA 1</li>
-                <li class="exame-item">BETA 2 MICROGLOBULINA</li>
-                <li class="exame-item">BETA 2 MICROGLOBULINA (URINA 24 HORAS)</li>
-                <li class="exame-item">BETA HCG - QUALITATIVO</li>
-                <li class="exame-item">BETA HCG - QUANTITATIVO</li>
-                <li class="exame-item">BETA-2-GLICOPROTEÍNA I</li>
-                <li class="exame-item">BICARBONATOS</li>
-                <li class="exame-item">BIG PROLACTINA</li>
-                <li class="exame-item">BILIRRUBINAS</li>
-                <li class="exame-item">BIOPSIA</li>
-                <li class="exame-item">BIOPSIA - PEÇA CIRURGICA</li>
-                <li class="exame-item">BIOPSIA - PESQUISA PARA HELICOBACTER PYLORI</li>
-                <li class="exame-item">BIOTINIDASE NEONATAL</li>
-                <li class="exame-item">BK - BACILO DE KOCH</li>
-                <li class="exame-item">BLASTOMICOSE SUL AMERICANA</li>
-                <li class="exame-item">BORDETELLA PERTUSSIS IGG</li>
-                <li class="exame-item">BORDETELLA PERTUSSIS IGM</li>
-                <li class="exame-item">BRUCELOSE</li>
-                <li class="exame-item">BRUCELOSE IgG</li>
-                <li class="exame-item">BRUCELOSE IgM</li>
-                <li class="exame-item">C282Y</li>
-                <li class="exame-item">CA 125</li>
-                <li class="exame-item">CA 15-3</li>
-                <li class="exame-item">CA 19-9</li>
-                <li class="exame-item">CA 50</li>
-                <li class="exame-item">CA 72-4</li>
-                <li class="exame-item">CADEIA KAPPA/LAMBDA LEVE LIVRE</li>
-                <li class="exame-item">CADMIO URINÁRIO (AMOSTRA ISOLADA)</li>
-                <li class="exame-item">CALCIO</li>
-                <li class="exame-item">CALCIO ( URINA ALEATORIA )</li>
-                <li class="exame-item">CALCIO IONICO</li>
-                <li class="exame-item">CALCITONINA</li>
-                <li class="exame-item">CALCULO</li>
-                <li class="exame-item">CALPROTECTINA</li>
-                <li class="exame-item">CANABIONOIDES - TESTE DE TRIAGEM (URINA RECENTE)</li>
-                <li class="exame-item">CANDIDA ALBICANS</li>
-                <li class="exame-item">CANDIDA SP</li>
-                <li class="exame-item">CAPACIDADE TOTAL DE LIGACAO DO FERRO</li>
-                <li class="exame-item">CARBAMAZEPINA</li>
-                <li class="exame-item">CARBOXIHEMOGLOBINA</li>
-                <li class="exame-item">CARDIOLIPINA IGA</li>
-                <li class="exame-item">CARDIOLIPINA IGG</li>
-                <li class="exame-item">CARDIOLIPINA IGM</li>
-                <li class="exame-item">CARIOTIPO COM BANDA G</li>
-                <li class="exame-item">CARNITINA LIVRE</li>
-                <li class="exame-item">CARNITINA TOTAL E LIVRE</li>
-                <li class="exame-item">CATECOLAMINAS - FRACOES (URINA 24 HORAS)</li>
-                <li class="exame-item">CAXUMBA IGG</li>
-                <li class="exame-item">CAXUMBA IGM</li>
-                <li class="exame-item">CD4 - SUBPOPULACAO LINFOCITARIA</li>
-                <li class="exame-item">CELULA PARIETAL</li>
-                <li class="exame-item">CENTROMERO</li>
-                <li class="exame-item">CERULOPLASMINA</li>
-                <li class="exame-item">CHLAMYDIA TRACHOMATIS</li>
-                <li class="exame-item">CHLAMYDIA TRACHOMATIS - IMUNOFLUORESCENC</li>
-                <li class="exame-item">CHLAMYDIA TRACHOMATIS - NEISSERIA GONORRHOEAE</li>
-                <li class="exame-item">CHLAMYDIA TRACHOMATIS IGA</li>
-                <li class="exame-item">CHLAMYDIA TRACHOMATIS IGG</li>
-                <li class="exame-item">CHLAMYDIA TRACHOMATIS IGM</li>
-                <li class="exame-item">CHUMBO</li>
-                <li class="exame-item">CICLOSPORINA</li>
-                <li class="exame-item">CISTINA</li>
-                <li class="exame-item">CITOLOGIA DE ESCARRO</li>
-                <li class="exame-item">CITOLOGIA ONCÓTICA</li>
-                <li class="exame-item">CITOMEGALOVIRUS - TESTE DE AVIDEZ IgG</li>
-                <li class="exame-item">CITOMEGALOVIRUS IGG</li>
-                <li class="exame-item">CITOMEGALOVIRUS IGM</li>
-                <li class="exame-item">CLEARENCE DE CREATININA - URINA 24HS</li>
-                <li class="exame-item">CLEARENCE DE UREIA (URINA 24 HORAS)</li>
-                <li class="exame-item">CLORETOS</li>
-                <li class="exame-item">CLORETOS (URINA 24 HORAS)</li>
-                <li class="exame-item">CLORETOS (URINA AMOSTRA UNICA/RECENTE)</li>
-                <li class="exame-item">CLOSTRIDIUM DIFFICILE - TOXINA A E B</li>
-                <li class="exame-item">COAGULOGRAMA COMPLETO</li>
-                <li class="exame-item">COBRE</li>
-                <li class="exame-item">COBRE (URINA 24 HORAS)</li>
-                <li class="exame-item">COBRE (URINA AMOSTRA UNICA/RECENTE)</li>
-                <li class="exame-item">COCAINA - TESTE DE TRIAGEM (URINA RECENTE)</li>
-                <li class="exame-item">COLESTEROL HDL</li>
-                <li class="exame-item">COLESTEROL LDL</li>
-                <li class="exame-item">COLESTEROL TOTAL</li>
-                <li class="exame-item">COLESTEROL VLDL</li>
-                <li class="exame-item">COLINESTERASE ERITROCITARIA</li>
-                <li class="exame-item">COLINESTERASE PLASMARICA - SUCEN</li>
-                <li class="exame-item">COLINESTERASE PLASMATICA</li>
-                <li class="exame-item">COMPLEMENTO C1q</li>
-                <li class="exame-item">COMPLEMENTO SERICO C2</li>
-                <li class="exame-item">COMPLEMENTO SERICO C3</li>
-                <li class="exame-item">COMPLEMENTO SERICO C4</li>
-                <li class="exame-item">COMPLEMENTO SÉRICO DO CH-50</li>
-                <li class="exame-item">COMPLEMENTO SERICO TOTAL - CH-100</li>
-                <li class="exame-item">COOMBS DIRETO</li>
-                <li class="exame-item">COOMBS INDIRETO</li>
-                <li class="exame-item">COPROCULTURA</li>
-                <li class="exame-item">COPROLOGICO FUNCIONAL</li>
-                <li class="exame-item">CORTISOL</li>
-                <li class="exame-item">CORTISOL APOS DEXAMETASONA - OVERNIGHT</li>
-                <li class="exame-item">CORTISOL URINARIO - 24hs</li>
-                <li class="exame-item">COXSACKIE A9 IgG e IgM</li>
-                <li class="exame-item">CREATININA</li>
-                <li class="exame-item">CREATININA (URINA 12 HORAS)</li>
-                <li class="exame-item">CREATININA (URINA 24 HORAS)</li>
-                <li class="exame-item">CREATININA (URINA AMOSTRA UNICA/RECENTE)</li>
-                <li class="exame-item">CREATINOFOSFOQUINASE MB - CK MB</li>
-                <li class="exame-item">CREATINOFOSFOQUINASE TOTAL - CPK</li>
-                <li class="exame-item">CROMATOGRAFIA</li>
-                <li class="exame-item">CROMO</li>
-                <li class="exame-item">CROMO (URINA 24 HORAS)</li>
-                <li class="exame-item">CROMO (URINA AMOSTRA UNICA/RECENTE)</li>
-                <li class="exame-item">CROMOGRANINA A</li>
-                <li class="exame-item">CRYPTOCOCCUS NEOFORMANS (AGLUTINACAO DIRETA)</li>
-                <li class="exame-item">CULTURA BACTERIANA</li>
-                <li class="exame-item">CULTURA PARA BACTÉRIAS AERÓBICAS</li>
-                <li class="exame-item">CURVA DE TOLERANCIA A GLICOSE</li>
-                <li class="exame-item">CURVA GLICÊMICA</li>
-                <li class="exame-item">CURVA INSULINICA</li>
-                <li class="exame-item">DEHIDROEPIANDROSTERONA - DHEA</li>
-                <li class="exame-item">DEHIDROGENASE LACTICA</li>
-                <li class="exame-item">DEMIRO D</li>
-                <li class="exame-item">DENGUE IGG</li>
-                <li class="exame-item">DENGUE IGM</li>
-                <li class="exame-item">DIAZEPAM</li>
-                <li class="exame-item">DIFENILHIDANTOINA</li>
-                <li class="exame-item">DIGOXINA</li>
-                <li class="exame-item">DIHIDROTESTOSTERONA</li>
-                <li class="exame-item">DISMORFISMO ERITROCITARIO</li>
-                <li class="exame-item">DNA - TESTE DE PATERNIDADE</li>
-                <li class="exame-item">DNA NATIVO</li>
-                <li class="exame-item">DOSAGEM DE CLONAZEPAM</li>
-                <li class="exame-item">DOSAGEM DE CTX</li>
-                <li class="exame-item">DOSAGEM DE TRIPTOFANO</li>
-                <li class="exame-item">DOSAGEM EVEROLIMUS</li>
-                <li class="exame-item">DREPANOCITOS</li>
-                <li class="exame-item">ELETROFORESE DE HEMOGLOBINA</li>
-                <li class="exame-item">ELETROFORESE DE PROTEINAS</li>
-                <li class="exame-item">ELETROFORESE DE PROTEINAS NA URINA</li>
-                <li class="exame-item">ELETROFORESE DE PROTEINAS NA URINA- 24 HORAS</li>
-                <li class="exame-item">ENTEROBIUS VERMICULARES</li>
-                <li class="exame-item">ENXOFRE</li>
-                <li class="exame-item">EPSTEIN BARR IGG</li>
-                <li class="exame-item">EPSTEIN BARR IGM</li>
-                <li class="exame-item">ERITROGRAMA</li>
-                <li class="exame-item">ERITROPOIETINA</li>
-                <li class="exame-item">ESQUISTOSSOMOSE</li>
-                <li class="exame-item">ESQUISTOSSOMOSE (IMUNOFLUORESCÊNCIA)</li>
-                <li class="exame-item">ESTANHO NA URINA</li>
-                <li class="exame-item">ESTRADIOL (E2)</li>
-                <li class="exame-item">ESTRIOL</li>
-                <li class="exame-item">ESTRONA</li>
-                <li class="exame-item">ESTUDO MOLECULAR DA MUTACAO A1298C</li>
-                <li class="exame-item">ETANOL</li>
-                <li class="exame-item">ETANOL URINÁRIO</li>
-                <li class="exame-item">EXAME MICOLOGICO DIRETO</li>
-                <li class="exame-item">FATOR ANTI-NUCLEAR (HEP2)</li>
-                <li class="exame-item">FATOR REUMATOIDE - FR</li>
-                <li class="exame-item">FATOR V LEIDEN</li>
-                <li class="exame-item">FATOR VIII FUNCIONAL</li>
-                <li class="exame-item">FEBRE MACULOSA - IGG</li>
-                <li class="exame-item">FEBRE MACULOSA - IGM</li>
-                <li class="exame-item">FENCICLIDINA - PCP</li>
-                <li class="exame-item">FENILALANINA</li>
-                <li class="exame-item">FENILALANINA - PKU - QUANTITATIVA (SANGUE)</li>
-                <li class="exame-item">FENITOINA - DIFENILHIDANTOINA</li>
-                <li class="exame-item">FENOBARBITAL</li>
-                <li class="exame-item">FENOL URINÁRIO</li>
-                <li class="exame-item">FENOTIPAGEM DE LINFOCITOS (CD19)</li>
-                <li class="exame-item">FERRITINA SERICA</li>
-                <li class="exame-item">FERRO SERICO</li>
-                <li class="exame-item">FIBRINOGENIO</li>
-                <li class="exame-item">FOSFATASE ACIDA PROSTATICA</li>
-                <li class="exame-item">FOSFATASE ACIDA TOTAL</li>
-                <li class="exame-item">FOSFATASE ALCALINA</li>
-                <li class="exame-item">FOSFATASE ALCALINA OSSEA</li>
-                <li class="exame-item">FOSFOLIPIDEOS</li>
-                <li class="exame-item">FOSFORO</li>
-                <li class="exame-item">FOSFORO (URINA 24 HORAS)</li>
-                <li class="exame-item">FOSFORO (URINA AMOSTRA ÚNICA/ RECENTE)</li>
-                <li class="exame-item">FRUTOSAMINA</li>
-                <li class="exame-item">FSH - HORMONIO FOLICULO ESTIMULANTE</li>
-                <li class="exame-item">FTA-ABS - TREPONEMA PALLIDUM IGG</li>
-                <li class="exame-item">FTA-ABS - TREPONEMA PALLIDUM IGM</li>
-                <li class="exame-item">FUNGOS</li>
-                <li class="exame-item">G6PD NEONATAL - GLICOSE 6 FOSFATO DEHIDROGENASE</li>
-                <li class="exame-item">GAD</li>
-                <li class="exame-item">GALACTOSE TOTAL</li>
-                <li class="exame-item">GAMA GLUTAMIL TRANSFERASE</li>
-                <li class="exame-item">GARDNERELLA</li>
-                <li class="exame-item">GASTRINA</li>
-                <li class="exame-item">GH BASAL E APÓS ESTIMULO COM CLONIDINA</li>
-                <li class="exame-item">GIARDIA LAMBLIA - ELISA</li>
-                <li class="exame-item">GLIADINA IGA</li>
-                <li class="exame-item">GLIADINA IGG</li>
-                <li class="exame-item">GLIADINA IGM</li>
-                <li class="exame-item">GLICOHEMOGLOBINA - HBA1C</li>
-                <li class="exame-item">GLICOSE</li>
-                <li class="exame-item">GLICOSE (URINA AMOSTRA UNICA/RECENTE)</li>
-                <li class="exame-item">GLICOSE 2 HORAS POS PRANDIAL</li>
-                <li class="exame-item">GLICOSE 6-FOSFATO DESIDROGENASE</li>
-                <li class="exame-item">GLICOSE 60 MINUTOS APOS 50g DE DEXTROSOL</li>
-                <li class="exame-item">GLICOSE 60 MINUTOS APOS 75G DE DEXTROSOL</li>
-                <li class="exame-item">GLOBULINA TRANSP TIROXINA-TBG</li>
-                <li class="exame-item">GLUCAGON</li>
-                <li class="exame-item">GLUTATIONA PEROXIDASE</li>
-                <li class="exame-item">GORDURA FECAL</li>
-                <li class="exame-item">GRAM</li>
-                <li class="exame-item">GRUPO SANGUINEO + FATOR RH</li>
-                <li class="exame-item">HAEMOPHILUS DUCREYI</li>
-                <li class="exame-item">HAPTOGLOBINA</li>
-                <li class="exame-item">HAV IGG</li>
-                <li class="exame-item">HAV IGM</li>
-                <li class="exame-item">HAV TOTAL</li>
-                <li class="exame-item">HBC IGG</li>
-                <li class="exame-item">HBC IGM</li>
-                <li class="exame-item">HBC TOTAL</li>
-                <li class="exame-item">HBE</li>
-                <li class="exame-item">HBEAG</li>
-                <li class="exame-item">HBS</li>
-                <li class="exame-item">HBSAG - ANTIGENO AUSTRALIA</li>
-                <li class="exame-item">HBV</li>
-                <li class="exame-item">HCV</li>
-                <li class="exame-item">HDV</li>
-                <li class="exame-item">HELICOBACTER PYLORI IGG</li>
-                <li class="exame-item">HELICOBACTER PYLORI IGM</li>
-                <li class="exame-item">HEMACIAS</li>
-                <li class="exame-item">HEMATOCRITO</li>
-                <li class="exame-item">HEMOGLOBINA</li>
-                <li class="exame-item">HEMOGLOBINOPATIAS - TRIAGEM NEONATAL</li>
-                <li class="exame-item">HEMOGRAMA COMPLETO</li>
-                <li class="exame-item">HEMOSSEDIMENTACAO</li>
-                <li class="exame-item">HERPESVIRUS SIMPLES I E II IgG (ELISA)</li>
-                <li class="exame-item">HEV</li>
-                <li class="exame-item">HGH BASAL - HORMONIO DO CRESCIMENTO</li>
-                <li class="exame-item">HGH BASAL E APOS ESTIMULO COM CLONIDINA (ATENSINA)</li>
-                <li class="exame-item">HGH BASAL E APOS ESTIMULO COM DEXAMETASONA</li>
-                <li class="exame-item">HGH BASAL E APOS ESTIMULO COM EXERCíCIO</li>
-                <li class="exame-item">HISTONA</li>
-                <li class="exame-item">HISTOPLASMA CAPSULATUM</li>
-                <li class="exame-item">HIV</li>
-                <li class="exame-item">HIV 1 E 2 DUO PESQUISA DE ANTIGENO E ANTIC. (ELFA)</li>
-                <li class="exame-item">HIV 1 OU 2</li>
-                <li class="exame-item">HIV-1</li>
-                <li class="exame-item">HOMOCISTEINA</li>
-                <li class="exame-item">HORMONIO ADRENOCORTICOTROFICO - ACTH</li>
-                <li class="exame-item">HORMONIO ANTI-MULLERIANO</li>
-                <li class="exame-item">HORMONIO ANTIDIURETICO (ADH)</li>
-                <li class="exame-item">HORMONIO DO CRESCIMENTO - HGH</li>
-                <li class="exame-item">HORMONIO DO CRESCIMENTO – HGH2</li>
-                <li class="exame-item">HORMONIO FOLICULO ESTIMULANTE - FSH</li>
-                <li class="exame-item">HORMONIO LUTEINIZANTE - LH</li>
-                <li class="exame-item">HPV</li>
-                <li class="exame-item">HTLV 1 E 2</li>
-                <li class="exame-item">HTLV 1 OU 2 PESQUISA DE ANTICORPOS</li>
-                <li class="exame-item">HTLV I E II ANTICORPOS</li>
-                <li class="exame-item">HTLV-1</li>
-                <li class="exame-item">IGE ESPECIFICA * CONSULTAR ESPECIFICAÇÕES</li>
-                <li class="exame-item">IGE MULTIPLO * CONSULTAR ESPECIFICAÇÕES</li>
-                <li class="exame-item">IGE TOTAL</li>
-                <li class="exame-item">IGE-DIPIRONA C294SA</li>
-                <li class="exame-item">IGF-1 - SOMATOMEDINA C (QLE)</li>
-                <li class="exame-item">IGF-1 - SOMATOMEDINA C (RIE)</li>
-                <li class="exame-item">IGFBP-3 (PROTEÍNA LIGADORA-3 DO IGF)</li>
-                <li class="exame-item">IMUNOFIXACAO EM SORO</li>
-                <li class="exame-item">IMUNOFIXACAO NA URINA</li>
-                <li class="exame-item">IMUNOFIXACAO URINA 24 HORAS</li>
-                <li class="exame-item">IMUNOGLOBULINA</li>
-                <li class="exame-item">IMUNOGLOBULINA IGA</li>
-                <li class="exame-item">IMUNOGLOBULINA IGD</li>
-                <li class="exame-item">IMUNOGLOBULINA IGG</li>
-                <li class="exame-item">IMUNOGLOBULINA IGM</li>
-                <li class="exame-item">IMUNOGLOBULINAS</li>
-                <li class="exame-item">IMUNOHISTOQUIMICA GERAL</li>
-                <li class="exame-item">INDICE DE HOMA</li>
-                <li class="exame-item">INDICE DE SATURACAO DA TRANSFERRINA</li>
-                <li class="exame-item">INDICE DE TIROXINA LIVRE - T3 RETENCAO + T4 TOTAL</li>
-                <li class="exame-item">INIBIDOR DE C1 ESTERASE</li>
-                <li class="exame-item">INSULINA</li>
-                <li class="exame-item">IODO NA URINA 24HS</li>
-                <li class="exame-item">ISOENZIMAS DO CPK</li>
-                <li class="exame-item">LAMOTRIGINA</li>
-                <li class="exame-item">LEPTINA</li>
-                <li class="exame-item">LEPTOSPIROSE - SORO AGLUTINAÇÃO</li>
-                <li class="exame-item">LEPTOSPIROSE IGG</li>
-                <li class="exame-item">LEPTOSPIROSE IGM</li>
-                <li class="exame-item">LEUCOCITOS - GLOBAL</li>
-                <li class="exame-item">LEUCOGRAMA</li>
-                <li class="exame-item">LH - HORMONIO LUTEINIZANTE</li>
-                <li class="exame-item">LIPASE</li>
-                <li class="exame-item">LIPIDES TOTAIS</li>
-                <li class="exame-item">LIPOPROTEINA - A</li>
-                <li class="exame-item">LITIO</li>
-                <li class="exame-item">LKM-1</li>
-                <li class="exame-item">LYME</li>
-                <li class="exame-item">MACHADO GUERREIRO ELISA</li>
-                <li class="exame-item">MACHADO GUERREIRO IGG</li>
-                <li class="exame-item">MACHADO GUERREIRO IGM</li>
-                <li class="exame-item">MACROPROLACTINA</li>
-                <li class="exame-item">MAGNESIO</li>
-                <li class="exame-item">MAGNESIO (URINA 24 HORAS)</li>
-                <li class="exame-item">MAGNESIO (URINA AMOSTRA ÚNICA/RECENTE/ISO</li>
-                <li class="exame-item">MANGANES</li>
-                <li class="exame-item">MANGANES (URINA 24 HORAS)</li>
-                <li class="exame-item">MANGANES (URINA AMOSTRA ÚNICA/RECENTE)</li>
-                <li class="exame-item">MERCURIO</li>
-                <li class="exame-item">MERCURIO (URINA 24 HORAS)</li>
-                <li class="exame-item">MERCURIO (URINA AMOSTRA UNICA/RECENTE)</li>
-                <li class="exame-item">METAHEMOGLOBINA</li>
-                <li class="exame-item">METANEFRINAS FRACIONADAS NA URINA</li>
-                <li class="exame-item">METANEFRINAS PLASMATICAS- SERICA</li>
-                <li class="exame-item">METANOL URINARIO</li>
-                <li class="exame-item">METILETILCETONA</li>
-                <li class="exame-item">MI-2</li>
-                <li class="exame-item">MICOBACTERIAS</li>
-                <li class="exame-item">MICROALBUMINURIA</li>
-                <li class="exame-item">MICROALBUMINURIA (URINA ALEATORIA)</li>
-                <li class="exame-item">MICROALBUMINURIA 24HS</li>
-                <li class="exame-item">MICROSSOMAL</li>
-                <li class="exame-item">MITOCONDRIA</li>
-                <li class="exame-item">MONOTESTE - MNI</li>
-                <li class="exame-item">MUCOPROTEINAS</li>
-                <li class="exame-item">MULTIPLO DE EPITELIOS</li>
-                <li class="exame-item">MUSCULO ESTRIADO</li>
-                <li class="exame-item">MUSCULO LISO</li>
-                <li class="exame-item">MUTACAO GENE DA METILENOTETRAHIDROFOLATO REDUTASE</li>
-                <li class="exame-item">MUTACAO NO GENE DA PROTROMBINA</li>
-                <li class="exame-item">MYCOPLASMA PNEUMONIAE IgG</li>
-                <li class="exame-item">MYCOPLASMA PNEUMONIAE IgM</li>
-                <li class="exame-item">NEISSERIA GONORRHOEAE</li>
-                <li class="exame-item">NEUTROFILOS</li>
-                <li class="exame-item">NICOTINA- DOSAGEM DE COTININA EM URINA</li>
-                <li class="exame-item">NIQUEL</li>
-                <li class="exame-item">NIQUEL (URINA 24 HORAS)</li>
-                <li class="exame-item">NIQUEL (URINA AMOSTRA UNICA/RECENTE)</li>
-                <li class="exame-item">NT-proBNP-PEPTIDEO NATRIURETICO CEREBRAL</li>
-                <li class="exame-item">OOGRAMA</li>
-                <li class="exame-item">OPIACEOS - TESTE DE TRIAGEM (URINA RECENTE)</li>
-                <li class="exame-item">OSMOLALIDADE</li>
-                <li class="exame-item">OSMOLALIDADE URINÁRIA 24H</li>
-                <li class="exame-item">OXIURUS</li>
-                <li class="exame-item">PARASITOLOGICO DE FEZES</li>
-                <li class="exame-item">PARATORMONIO - PTH INTACTO (MOLECULA INTEIRA)</li>
-                <li class="exame-item">PARVOVIRUS B19 IGG</li>
-                <li class="exame-item">PARVOVIRUS B19 IGM</li>
-                <li class="exame-item">PCR- EBV QUANTITATIVO</li>
-                <li class="exame-item">PEPTIDEO C</li>
-                <li class="exame-item">PLAQUETAS</li>
-                <li class="exame-item">PLASMA RICO EM PLAQUETAS</li>
-                <li class="exame-item">POLIMORFISMO DO PAI-1</li>
-                <li class="exame-item">POTASSIO</li>
-                <li class="exame-item">POTASSIO (URINA 24 HORAS)</li>
-                <li class="exame-item">PRO-BNP N TERMINAL</li>
-                <li class="exame-item">PROGESTERONA</li>
-                <li class="exame-item">PROLACTINA</li>
-                <li class="exame-item">PROLACTINA APÓS DILUIÇÃO</li>
-                <li class="exame-item">PROTEINA C REATIVA - PCR</li>
-                <li class="exame-item">PROTEINA DE BENCE JONES</li>
-                <li class="exame-item">PROTEINA P RIBOSSOMAL</li>
-                <li class="exame-item">PROTEINA S</li>
-                <li class="exame-item">PROTEINAS</li>
-                <li class="exame-item">PROTEINAS DE BENCE JONES (URINA 24 HORAS)</li>
-                <li class="exame-item">PROTEINAS TOTAIS E FRACIONADAS</li>
-                <li class="exame-item">PROTEINAS/CREATININA</li>
-                <li class="exame-item">PROTEINURIA (URINA 24 HORAS)</li>
-                <li class="exame-item">PROTEINURIA AMOSTRA ALEATORIA</li>
-                <li class="exame-item">PSA LIVRE</li>
-                <li class="exame-item">PSA TOTAL</li>
-                <li class="exame-item">PSA ULTRA SENSIVEL (EQM)</li>
-                <li class="exame-item">RENINA</li>
-                <li class="exame-item">RENINA - ATIVIDADE</li>
-                <li class="exame-item">RETICULOCITOS</li>
-                <li class="exame-item">RNP</li>
-                <li class="exame-item">RUBEOLA - TESTE DE AVIDEZ IGG</li>
-                <li class="exame-item">RUBEOLA IGG</li>
-                <li class="exame-item">RUBEOLA IGM</li>
-                <li class="exame-item">SANGUE OCULTO NAS FEZES</li>
-                <li class="exame-item">SARAMPO IgG</li>
-                <li class="exame-item">SARAMPO IgM</li>
-                <li class="exame-item">SELENIO</li>
-                <li class="exame-item">SEROTONINA TOTAL</li>
-                <li class="exame-item">SEXAGEM FETAL</li>
-                <li class="exame-item">SHBG - GLOBULINA LIGADORA DE HORMONIOS SEXUAIS</li>
-                <li class="exame-item">SODIO</li>
-                <li class="exame-item">SODIO (URINA 24 HORAS)</li>
-                <li class="exame-item">SODIO URINA ALEATORIA</li>
-                <li class="exame-item">SSA/RO</li>
-                <li class="exame-item">SSB/LA</li>
-                <li class="exame-item">STREPTOCOCCUS A</li>
-                <li class="exame-item">STREPTOCOCCUS BETA HEMOLITICO DO GRUPO B</li>
-                <li class="exame-item">SUBPOPULACAO LINFOCITARIA CD4 + CD8 + CD3</li>
-                <li class="exame-item">SULFATO DE DEHIDROEPIANDROSTERONA</li>
-                <li class="exame-item">SUPEROXIDO DISMUTASE</li>
-                <li class="exame-item">T3 LIVRE</li>
-                <li class="exame-item">T3 RETENCAO - CAPTACAO OU UPTAKE</li>
-                <li class="exame-item">T3 REVERSO</li>
-                <li class="exame-item">T3 TOTAL</li>
-                <li class="exame-item">T4 LIVRE</li>
-                <li class="exame-item">T4 NEONATAL</li>
-                <li class="exame-item">T4 TOTAL</li>
-                <li class="exame-item">TACROLIMUS</li>
-                <li class="exame-item">TEMPO DE COAGULACAO</li>
-                <li class="exame-item">TEMPO DE PROTROMBINA</li>
-                <li class="exame-item">TEMPO DE SANGRIA</li>
-                <li class="exame-item">TEMPO DE TROMBINA</li>
-                <li class="exame-item">TEMPO DE TROMBOPLASTINA PARCIAL ATIVADO</li>
-                <li class="exame-item">TEMPO E ATIVIDADE DE PROTROMBINA + RNI</li>
-                <li class="exame-item">TESTE DE FALCIZAÇÃO</li>
-                <li class="exame-item">TESTE DE TOLERÂCIA A LACTOSE</li>
-                <li class="exame-item">TESTE DE TOLERANCIA A GLICOSE</li>
-                <li class="exame-item">TESTE DO PEZINHO AMPLIADO</li>
-                <li class="exame-item">TESTE DO PEZINHO BÁSICO</li>
-                <li class="exame-item">TESTE DO PEZINHO MASTER</li>
-                <li class="exame-item">TESTOSTERONA LIVRE</li>
-                <li class="exame-item">TESTOSTERONA TOTAL</li>
-                <li class="exame-item">TIREOGLOBULINA</li>
-                <li class="exame-item">TOLERÂNCIA A GLICOSE - 50G DE DEXTROSOL</li>
-                <li class="exame-item">TOLERÂNCIA A GLICOSE - 75G DE DEXTROSOL</li>
-                <li class="exame-item">TOXICOLÓGICO</li>
-                <li class="exame-item">TOXOCARA - ANTICORPOS IGG</li>
-                <li class="exame-item">TOXOCARA - ANTICORPOS IGM</li>
-                <li class="exame-item">TOXOPLASMOSE - TESTE DE AVIDEZ IGG</li>
-                <li class="exame-item">TOXOPLASMOSE HEMAGLUTINACAO</li>
-                <li class="exame-item">TOXOPLASMOSE IGA</li>
-                <li class="exame-item">TOXOPLASMOSE IGG</li>
-                <li class="exame-item">TOXOPLASMOSE IgG e IgM</li>
-                <li class="exame-item">TOXOPLASMOSE IGM</li>
-                <li class="exame-item">TPO</li>
-                <li class="exame-item">TRANSAMINASE GLUTAMICO OXALACETICA</li>
-                <li class="exame-item">TRANSAMINASE GLUTAMICO PIRUVICA</li>
-                <li class="exame-item">TRANSFERRINA</li>
-                <li class="exame-item">TREPONEMA PALLIDUM - HEMOAGLUTINACAO</li>
-                <li class="exame-item">TREPONEMA PALLIDUM IGM NEONATAL - SIFILIS</li>
-                <li class="exame-item">TRICLOROCOMPOSTOS TOTAIS (URINA FINAL JOR. TRAB.)</li>
-                <li class="exame-item">TRICLOROCOMPOSTOS TOTAIS (URINA/TRABALHO)</li>
-                <li class="exame-item">TRICLOROCOMPOSTOS TOTAIS URINARIO</li>
-                <li class="exame-item">TRIGLICERIDES</li>
-                <li class="exame-item">TRIPSINA NEONATAL</li>
-                <li class="exame-item">TRYPANOSOMA CRUZI</li>
-                <li class="exame-item">TRYPANOSOMA CRUZI IGM</li>
-                <li class="exame-item">TRYPANOSSOMA CRUZI NEONATAL</li>
-                <li class="exame-item">TSH NEONATAL</li>
-                <li class="exame-item">TSH ULTRA SENSIVEL</li>
-                <li class="exame-item">UREIA</li>
-                <li class="exame-item">UREIA (URINA 24 HORAS)</li>
-                <li class="exame-item">URINA ROTINA</li>
-                <li class="exame-item">UROCULTURA</li>
-                <li class="exame-item">V.D.R.L.</li>
-                <li class="exame-item">VARICELA ZOSTER IGG</li>
-                <li class="exame-item">VARICELA ZOSTER IGM</li>
-                <li class="exame-item">VDRL</li>
-                <li class="exame-item">VITAMINA A</li>
-                <li class="exame-item">VITAMINA B1</li>
-                <li class="exame-item">VITAMINA B12</li>
-                <li class="exame-item">VITAMINA B2</li>
-                <li class="exame-item">VITAMINA B3</li>
-                <li class="exame-item">VITAMINA B5</li>
-                <li class="exame-item">VITAMINA B6</li>
-                <li class="exame-item">VITAMINA C</li>
-                <li class="exame-item">VITAMINA E</li>
-                <li class="exame-item">VITAMINA K</li>
-                <li class="exame-item">WAALER ROSE</li>
-                <li class="exame-item">ZIKA VIRUS</li>
-                <li class="exame-item">ZIKA VIRUS ANTICORPOS IgM</li>
-                <li class="exame-item">ZINCO (URINA 24 HORAS)</li>
-                <li class="exame-item">ZINCO (URINA AMOSTRA UNICA/RECENTE)</li>
-                <li class="exame-item">ZINCO ERITROCITARIO</li>
-                <li class="exame-item">ZINCO PROTOPORFIRINA (SANGUE)</li>
-            </ul>
-        </div>
-
+        <p class="texto__copyright">© 2024 Peniel Tecnologia. Todos os direitos reservados.</p>
+    
     </section>
 
     <!-- JavaScript (Opcional) -->

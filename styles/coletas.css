@@ -49,7 +49,16 @@
 }
 
 @media only screen and (min-width: 768px){
+    .titulo__coletas{
+        font-size: 1.4rem;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
 
+    .container__coletas{
+        padding-left: 20%;
+        padding-right: 20%;
+    }
 }
 
 

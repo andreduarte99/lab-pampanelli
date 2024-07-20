@@ -45,6 +45,7 @@
     padding-left: 1.5rem;
     border-bottom: 2px solid var(--cor-principal);
     background: linear-gradient(90deg, #018044, #017D49, #B2D3C2);
+    font-family: var(--fonte-principal);
 }
 
 .container__barra-pesquisa{
@@ -118,6 +119,14 @@ input#pesquisaInput{
 
     .btn__exames{
        font-size: 1.2rem;
+    }
+
+    .container__barra-pesquisa{
+        margin:0 10%;
+    }
+    
+    .container__pesquisa{
+        margin: 0 12%;
     }
 
 }

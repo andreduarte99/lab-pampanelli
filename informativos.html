@@ -18,128 +18,147 @@
 </head>
 <body>
 
-    <header class="cabecalho">
-        <div class="menu-hamburguer">
+    <div class="wrapper"> 
+        <header class="cabecalho">
+            <div class="menu-hamburguer">
 
-            <div id="container">
+                <div id="container">
 
-                <input type="checkbox" id="menu" class="container__botao">
-                <label for="menu" class="container__rotulo">
-                    <span class="cabecalho__menu-hamburguer container__imagem"></span>
-                </label>
+                    <input type="checkbox" id="menu" class="container__botao">
+                    <label for="menu" class="container__rotulo">
+                        <span class="cabecalho__menu-hamburguer container__imagem"></span>
+                    </label>
 
-                <ul  class="lista-menu">
-                    
-                    <li class="lista-menu__item">
-                        <img src="./img/home.svg" alt="ícone home">
-                        <a href="index.html" class="lista-menu__link">Home</a>
-                    </li>
-
-                    <li class="lista-menu__item">
-                        <img src="./img/sobre.svg" alt="ícone sobre">
-                        <a href="about.html" class="lista-menu__link">Sobre</a>
-                    </li>
-
-                    <li class="lista-menu__item">
-                        <img src="./img/resultado.svg" alt="ícone resultados de exames">
-                        <a href="./index.html#id__resultado" class="lista-menu__link" onclick="closeMenu()">Resultados de Exames</a>
-                    </li>
-
-                    <li class="lista-menu__item">
-                        <img src="./img/exames.svg" alt="ícone exames">
-                        <a href="exames.html" class="lista-menu__link">Exames</a>
-                    </li>
-
-                    <li class="lista-menu__item">
-                        <img src="./img/convenio.svg" alt="ícone convênios">
-                        <a href="./index.html#id__convenios" class="lista-menu__link" onclick="closeMenu()">Convênios</a>
-                    </li>
-
-                    <li class="lista-menu__item">
-                        <img src="./img/coleta.svg" alt="ícone coleta">
-                        <a href="./index.html#id_coletas" class="lista-menu__link"
-                        onclick="closeMenu()">Coleta</a>
-                    </li>
-
-                    <li class="lista-menu__item">
-                        <img src="./img/informativo.svg" alt="ícone informativos">
-                        <a href="./index.html#id_informativos" class="lista-menu__link"
-                        onclick="closeMenu()">Informativos</a>
-                    </li>
-
-                    <li class="lista-menu__item">
-                        <img src="./img/localizacao.png" alt="ícone informativos">
-                        <a href="./index.html#id_localizacao" class="lista-menu__link"
-                        onclick="closeMenu()">Localização</a>
-                    </li>
-
-                </ul>
-
-            </div>
-        </div>
-
-        <div class="container__logo">
-            <a href="index.html"><img class="logo" src="./img/logo.png" alt="Logo Laboratório Pampanelli"></a>
-        </div>
-
-        <div class="container__btn-cabecalho">
-            <button type="button" class="btn-cabecalho" onclick="openOverlay()">Contatos</button>
-        </div>
-
-        <div class="overlay" id="overlay">
-            <div class="content">
-                <h2 class="titulo__contato">Fale conosco</h2>
-                <a href="https://wa.me/message/HZTN34W3NHSTA1" class="link-btn">
-                    <img class="img__link-btn" src="./img/whatsapp.png" alt="Ícone">
-                    WhatsApp
-                </a>
-                <a href="tel:+551238822888" class="link-btn">
-                    <img class="img__link-btn" src="./img/contato.svg" alt="Ícone">
-                    Telefone
-                </a>
-                <a href="mailto:contato@laboratoriopampanelli.com.br" class="link-btn">
-                    <img class="img__link-btn" src="./img/email.png" alt="Ícone">
-                    E-mail
-                </a>
-                <button class="close-btn" onclick="closeOverlay()">Fechar</button>
-            </div>
-        </div>
-
-
-    </header>
-
-    <section class="container__informativo-titulo">
-        <div class="informativo__titulo-div">
-            <h1 class="titulo__informativo-h1">Informativos</h1>
-        </div>
-    </section>
-
-    <section class="container__mostra-informativo">
-        <div class="accordion">
-            <div class="accordion-item">
-                <button class="accordion-button">
-                    11/03/2020 - Sexagem Fetal
-                    <i class="fas fa-chevron-down"></i>
-                </button>
-                <div class="accordion-content">
-                    <p>O exame de sexagem fetal possibilita que você descubra o sexo do seu bebê através de um  processo com precisão de 99%, podendo ser feito a partir da 8ª semana completa  de gestação. Esta probabilidade vai aumentando conforme a idade gestacional, ou seja, quanto maior o número de semanas de gestação maior a certeza do resultado. É coletado sangue venoso materno, como em um exame de sangue convencional.</br></br>
-                        O teste se baseia na identificação de sequências do cromossomo Y por meio da técnica de reação em cadeia da polimerase (PCR). A presença  deste marcador genético indica o desenvolvimento de um feto do sexo masculino, enquanto a sua ausência identifica o provável desenvolvimento de um feto do sexo feminino.</br></br>
+                    <ul  class="lista-menu">
                         
-                        Para saber valores e prazo do resultado, sanar dúvidas ou outras informações, entre em contato com a nossa equipe.</p>
+                        <li class="lista-menu__item">
+                            <img src="./img/home.svg" alt="ícone home">
+                            <a href="index.html" class="lista-menu__link">Home</a>
+                        </li>
+
+                        <li class="lista-menu__item">
+                            <img src="./img/sobre.svg" alt="ícone sobre">
+                            <a href="about.html" class="lista-menu__link">Sobre</a>
+                        </li>
+
+                        <li class="lista-menu__item">
+                            <img src="./img/resultado.svg" alt="ícone resultados de exames">
+                            <a href="./index.html#id__resultado" class="lista-menu__link" onclick="closeMenu()">Resultados de Exames</a>
+                        </li>
+
+                        <li class="lista-menu__item">
+                            <img src="./img/exames.svg" alt="ícone exames">
+                            <a href="exames.html" class="lista-menu__link">Exames</a>
+                        </li>
+
+                        <li class="lista-menu__item">
+                            <img src="./img/convenio.svg" alt="ícone convênios">
+                            <a href="./index.html#id__convenios" class="lista-menu__link" onclick="closeMenu()">Convênios</a>
+                        </li>
+
+                        <li class="lista-menu__item">
+                            <img src="./img/coleta.svg" alt="ícone coleta">
+                            <a href="./index.html#id_coletas" class="lista-menu__link"
+                            onclick="closeMenu()">Coleta</a>
+                        </li>
+
+                        <li class="lista-menu__item">
+                            <img src="./img/informativo.svg" alt="ícone informativos">
+                            <a href="./index.html#id_informativos" class="lista-menu__link"
+                            onclick="closeMenu()">Informativos</a>
+                        </li>
+
+                        <li class="lista-menu__item">
+                            <img src="./img/localizacao.png" alt="ícone informativos">
+                            <a href="./index.html#id_localizacao" class="lista-menu__link"
+                            onclick="closeMenu()">Localização</a>
+                        </li>
+
+                    </ul>
+
                 </div>
             </div>
-            <!--
-            <div class="accordion-item">
-                <button class="accordion-button">
-                    Seção 2
-                    <i class="fas fa-chevron-down"></i>
-                </button>
-                <div class="accordion-content">
-                    <p>Conteúdo da Seção 2.</p>
+
+            <div class="container__logo">
+                <a href="index.html"><img class="logo" src="./img/logo.png" alt="Logo Laboratório Pampanelli"></a>
+            </div>
+
+            <div class="container__btn-cabecalho">
+                <button type="button" class="btn-cabecalho" onclick="openOverlay()">Contatos</button>
+            </div>
+
+            <div class="overlay" id="overlay">
+                <div class="content">
+                    <h2 class="titulo__contato">Fale conosco</h2>
+                    <a href="https://wa.me/message/HZTN34W3NHSTA1" class="link-btn">
+                        <img class="img__link-btn" src="./img/whatsapp.png" alt="Ícone">
+                        WhatsApp
+                    </a>
+                    <a href="tel:+551238822888" class="link-btn">
+                        <img class="img__link-btn" src="./img/contato.svg" alt="Ícone">
+                        Telefone
+                    </a>
+                    <a href="mailto:contato@laboratoriopampanelli.com.br" class="link-btn">
+                        <img class="img__link-btn" src="./img/email.png" alt="Ícone">
+                        E-mail
+                    </a>
+                    <button class="close-btn" onclick="closeOverlay()">Fechar</button>
                 </div>
             </div>
-            -->
+
+
+        </header>
+
+        <section class="container__informativo-titulo">
+            <div class="informativo__titulo-div">
+                <h1 class="titulo__informativo-h1">Informativos</h1>
+            </div>
+        </section>
+
+        <section class="container__mostra-informativo">
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-button">
+                        11/03/2020 - Sexagem Fetal
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>O exame de sexagem fetal possibilita que você descubra o sexo do seu bebê através de um  processo com precisão de 99%, podendo ser feito a partir da 8ª semana completa  de gestação. Esta probabilidade vai aumentando conforme a idade gestacional, ou seja, quanto maior o número de semanas de gestação maior a certeza do resultado. É coletado sangue venoso materno, como em um exame de sangue convencional.</br></br>
+                            O teste se baseia na identificação de sequências do cromossomo Y por meio da técnica de reação em cadeia da polimerase (PCR). A presença  deste marcador genético indica o desenvolvimento de um feto do sexo masculino, enquanto a sua ausência identifica o provável desenvolvimento de um feto do sexo feminino.</br></br>
+                            
+                            Para saber valores e prazo do resultado, sanar dúvidas ou outras informações, entre em contato com a nossa equipe.</p>
+                    </div>
+                </div>
+                
+                <!--
+                <div class="accordion-item">
+                    <button class="accordion-button">
+                        Seção 2
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Conteúdo da Seção 2.</p>
+                    </div>
+                </div>
+                -->
+            </div>
+        </section>
+    
+    </div>
+    <section class="container__footer">
+
+        <h2 class="titulo__redes">Fique por dentro das novidades! Siga-nos nas redes sociais.</h2>
+        <div class="container__img-redes">
+            <a class="link__redes" href="https://www.facebook.com/profile.php?id=100063756602190&ref=pages_you_manage" target="_blank"><img class="img__redes" src="./img/facebook.png" alt="logo facebook"></a>
+            <a class="link__redes" href="https://www.instagram.com/laboratoriopampanelli/" target="_blank"><img class="img__redes" src="./img/instagram.png" alt="logo instagram"></a>
+            <a class="link__redes" href="https://api.whatsapp.com/message/HZTN34W3NHSTA1?autoload=1&app_absent=0" target="_blank"><img class="img__redes" src="./img/whatsapp2.png" alt="logo whatsapp"></a>
+        </div>  
+        <div class="container__img-certificacao">
+            <img class="img__certificacao" src="./img/controllab.jpg" alt="logo controllab"> 
+            <img class="img__certificacao" src="./img/pncq.jpg" alt="logo pncq"> 
         </div>
+        <p class="texto__copyright">© 2024 Peniel Tecnologia. Todos os direitos reservados.</p>
+    
     </section>
 
     <!-- JavaScript (Opcional) -->

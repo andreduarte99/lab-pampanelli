@@ -16,140 +16,158 @@
 
 </head>
 <body>
+    <div class="wrapper">
+        <header class="cabecalho">
+            <div class="menu-hamburguer">
 
-    <header class="cabecalho">
-        <div class="menu-hamburguer">
+                <div id="container">
 
-            <div id="container">
+                    <input type="checkbox" id="menu" class="container__botao">
+                    <label for="menu" class="container__rotulo">
+                        <span class="cabecalho__menu-hamburguer container__imagem"></span>
+                    </label>
 
-                <input type="checkbox" id="menu" class="container__botao">
-                <label for="menu" class="container__rotulo">
-                    <span class="cabecalho__menu-hamburguer container__imagem"></span>
-                </label>
+                    <ul  class="lista-menu">
+                        
+                        <li class="lista-menu__item">
+                            <img src="./img/home.svg" alt="ícone home">
+                            <a href="index.html" class="lista-menu__link">Home</a>
+                        </li>
 
-                <ul  class="lista-menu">
-                    
-                    <li class="lista-menu__item">
-                        <img src="./img/home.svg" alt="ícone home">
-                        <a href="index.html" class="lista-menu__link">Home</a>
-                    </li>
+                        <li class="lista-menu__item">
+                            <img src="./img/sobre.svg" alt="ícone sobre">
+                            <a href="about.html" class="lista-menu__link">Sobre</a>
+                        </li>
 
-                    <li class="lista-menu__item">
-                        <img src="./img/sobre.svg" alt="ícone sobre">
-                        <a href="about.html" class="lista-menu__link">Sobre</a>
-                    </li>
+                        <li class="lista-menu__item">
+                            <img src="./img/resultado.svg" alt="ícone resultados de exames">
+                            <a href="./index.html#id__resultado" class="lista-menu__link" onclick="closeMenu()">Resultados de Exames</a>
+                        </li>
 
-                    <li class="lista-menu__item">
-                        <img src="./img/resultado.svg" alt="ícone resultados de exames">
-                        <a href="./index.html#id__resultado" class="lista-menu__link" onclick="closeMenu()">Resultados de Exames</a>
-                    </li>
+                        <li class="lista-menu__item">
+                            <img src="./img/exames.svg" alt="ícone exames">
+                            <a href="exames.html" class="lista-menu__link">Exames</a>
+                        </li>
 
-                    <li class="lista-menu__item">
-                        <img src="./img/exames.svg" alt="ícone exames">
-                        <a href="exames.html" class="lista-menu__link">Exames</a>
-                    </li>
+                        <li class="lista-menu__item">
+                            <img src="./img/convenio.svg" alt="ícone convênios">
+                            <a href="./index.html#id__convenios" class="lista-menu__link" onclick="closeMenu()">Convênios</a>
+                        </li>
 
-                    <li class="lista-menu__item">
-                        <img src="./img/convenio.svg" alt="ícone convênios">
-                        <a href="./index.html#id__convenios" class="lista-menu__link" onclick="closeMenu()">Convênios</a>
-                    </li>
+                        <li class="lista-menu__item">
+                            <img src="./img/coleta.svg" alt="ícone coleta">
+                            <a href="./index.html#id_coletas" class="lista-menu__link">Coleta</a>
+                        </li>
 
-                    <li class="lista-menu__item">
-                        <img src="./img/coleta.svg" alt="ícone coleta">
-                        <a href="./index.html#id_coletas" class="lista-menu__link">Coleta</a>
-                    </li>
+                        <li class="lista-menu__item">
+                            <img src="./img/informativo.svg" alt="ícone informativos">
+                            <a href="./index.html#id_informativos" class="lista-menu__link">Informativos</a>
+                        </li>
 
-                    <li class="lista-menu__item">
-                        <img src="./img/informativo.svg" alt="ícone informativos">
-                        <a href="./index.html#id_informativos" class="lista-menu__link">Informativos</a>
-                    </li>
+                        <li class="lista-menu__item">
+                            <img src="./img/localizacao.png" alt="ícone informativos">
+                            <a href="./index.html#id_localizacao" class="lista-menu__link"
+                            onclick="closeMenu()">Localização</a>
+                        </li>
 
-                    <li class="lista-menu__item">
-                        <img src="./img/localizacao.png" alt="ícone informativos">
-                        <a href="./index.html#id_localizacao" class="lista-menu__link"
-                        onclick="closeMenu()">Localização</a>
-                    </li>
+                    </ul>
 
-                </ul>
-
+                </div>
             </div>
-        </div>
 
-        <div class="container__logo">
-            <a href="index.html"><img class="logo" src="./img/logo.png" alt="Logo Laboratório Pampanelli"></a>
-        </div>
-
-        <div class="container__btn-cabecalho">
-            <button type="button" class="btn-cabecalho" onclick="openOverlay()">Contatos</button>
-        </div>
-
-        <div class="overlay" id="overlay">
-            <div class="content">
-                <h2 class="titulo__contato">Fale conosco</h2>
-                <a href="https://wa.me/message/HZTN34W3NHSTA1" class="link-btn">
-                    <img class="img__link-btn" src="./img/whatsapp.png" alt="Ícone">
-                    WhatsApp
-                </a>
-                <a href="tel:+551238822888" class="link-btn">
-                    <img class="img__link-btn" src="./img/contato.svg" alt="Ícone">
-                    Telefone
-                </a>
-                <a href="mailto:contato@laboratoriopampanelli.com.br" class="link-btn">
-                    <img class="img__link-btn" src="./img/email.png" alt="Ícone">
-                    E-mail
-                </a>
-                <button class="close-btn" onclick="closeOverlay()">Fechar</button>
+            <div class="container__logo">
+                <a href="index.html"><img class="logo" src="./img/logo.png" alt="Logo Laboratório Pampanelli"></a>
             </div>
-        </div>
 
-    </header>
-
-    <section class="container__sobre">
-        <div class="sobre__titulo">
-            <h1 class="titulo__sobre">Sobre nós</h1>
-        </div>
-        <div class="sobre__img">
-            <img class="img__sobre" src="./img/sobre.png" alt="Imagem da entrada do laboratório">
-        </div>
-    </section>
-
-    <section class="conteudo__sobre">
-        <div class="conteudo__sobre-div">
-            <button id="mostrarDivButtonSobre" class="btn__sobre" onclick="" >Laboratório <img src="./img/botao-adicionar.png" alt="botão ver mais" class="btn__sobre-img" id="img-sobre"></button>
-            <div id="contentDivSobre" class="btn__sobre-mostrar hidden">
-                <p>Fundado em 2004, o Laboratório Pampanelli surgiu do sonho de uma empreendedora pioneira da cidade, dedicada a oferecer exames especializados com alta qualidade e agilidade a preços acessíveis.</br></br>
-
-                    Com mais de 50 parceiros, somos referência em atendimento diferenciado, baseando-nos em valores como ética, transparência, sustentabilidade, relacionamento diferenciado, responsabilidade e reconhecimento.</br></br>
-                    
-                    Oferecemos serviços de Análises Clínicas e Patológicas, Coleta Domiciliar, Exames Toxicológicos para CNH, CLT e Concursos, Testes de Triagem de Substâncias Ilícitas, Genética Humana (Cariótipo, Sexagem Fetal, Teste de Paternidade e Teste do Pezinho). Nosso compromisso é fornecer resultados de excelência e manter um relacionamento de confiança com nossos clientes, participando dos principais programas de controle de qualidade.</p>
+            <div class="container__btn-cabecalho">
+                <button type="button" class="btn-cabecalho" onclick="openOverlay()">Contatos</button>
             </div>
-        </div>
 
-        <div class="conteudo__sobre-div">
-            <button id="mostrarDivButtonMissao" class="btn__sobre" onclick="">Missão <img src="./img/botao-adicionar.png" alt="botão ver mais" class="btn__sobre-img" id="img-missao"></button>
-            <div id="contentDivMissao" class="btn__sobre-mostrar hidden">
-                <p>Fornecer a melhor assistência médica e serviços de emergência com rapidez, utilizando todos os recursos humanos e tecnológicos disponíveis para garantir conforto e tranquilidade aos nossos clientes.</p>
+            <div class="overlay" id="overlay">
+                <div class="content">
+                    <h2 class="titulo__contato">Fale conosco</h2>
+                    <a href="https://wa.me/message/HZTN34W3NHSTA1" class="link-btn">
+                        <img class="img__link-btn" src="./img/whatsapp.png" alt="Ícone">
+                        WhatsApp
+                    </a>
+                    <a href="tel:+551238822888" class="link-btn">
+                        <img class="img__link-btn" src="./img/contato.svg" alt="Ícone">
+                        Telefone
+                    </a>
+                    <a href="mailto:contato@laboratoriopampanelli.com.br" class="link-btn">
+                        <img class="img__link-btn" src="./img/email.png" alt="Ícone">
+                        E-mail
+                    </a>
+                    <button class="close-btn" onclick="closeOverlay()">Fechar</button>
+                </div>
             </div>
-        </div>
 
-        <div class="conteudo__sobre-div">
-            <button id="mostrarDivButtonVisao" class="btn__sobre" onclick="">Visão <img src="./img/botao-adicionar.png" alt="botão ver mais" class="btn__sobre-img" id="img-visao"></button>
-            <div id="contentDivVisao" class="btn__sobre-mostrar hidden">
-                <p>Ser uma empresa modelo e referência na gestão de negócios de saúde, destacando-se como o parceiro ideal para provedores de saúde privada e pública no Brasil, assim como para as pessoas que confiam seu cuidado médico a nós.</p>
+        </header>
+
+        <section class="container__sobre">
+            <div class="sobre__titulo">
+                <h1 class="titulo__sobre">Sobre nós</h1>
             </div>
-        </div>
-        
-        <div class="conteudo__sobre-div">
-            <button id="mostrarDivButtonValores" class="btn__sobre" onclick="">Valores <img src="./img/botao-adicionar.png" alt="botão ver mais" class="btn__sobre-img" id="img-valores"></button>
-            <div id="contentDivValores" class="btn__sobre-mostrar hidden">
-                <p><span>Ética:</span> Guiar-se por este princípio para respeitar a vida e o espaço de cada cidadão.</br></br>
-
-                    <span>Solidariedade:</span> Manter uma percepção constante da realidade da saúde no Brasil, oferecendo soluções que valorizem e estimulem este valor.</br></br>
-                    
-                    <span>Humanização:</span> Priorizar o atendimento e o relacionamento humano, visando a satisfação e o bem-estar das pessoas.</p>
+            <div class="sobre__img">
+                <img class="img__sobre" src="./img/sobre.png" alt="Imagem da entrada do laboratório">
             </div>
-        </div>
+        </section>
 
+        <section class="conteudo__sobre">
+            <div class="conteudo__sobre-div">
+                <button id="mostrarDivButtonSobre" class="btn__sobre" onclick="" >Laboratório <img src="./img/botao-adicionar.png" alt="botão ver mais" class="btn__sobre-img" id="img-sobre"></button>
+                <div id="contentDivSobre" class="btn__sobre-mostrar hidden">
+                    <p>Fundado em 2004, o Laboratório Pampanelli surgiu do sonho de uma empreendedora pioneira da cidade, dedicada a oferecer exames especializados com alta qualidade e agilidade a preços acessíveis.</br></br>
+
+                        Com mais de 50 parceiros, somos referência em atendimento diferenciado, baseando-nos em valores como ética, transparência, sustentabilidade, relacionamento diferenciado, responsabilidade e reconhecimento.</br></br>
+                        
+                        Oferecemos serviços de Análises Clínicas e Patológicas, Coleta Domiciliar, Exames Toxicológicos para CNH, CLT e Concursos, Testes de Triagem de Substâncias Ilícitas, Genética Humana (Cariótipo, Sexagem Fetal, Teste de Paternidade e Teste do Pezinho). Nosso compromisso é fornecer resultados de excelência e manter um relacionamento de confiança com nossos clientes, participando dos principais programas de controle de qualidade.</p>
+                </div>
+            </div>
+
+            <div class="conteudo__sobre-div">
+                <button id="mostrarDivButtonMissao" class="btn__sobre" onclick="">Missão <img src="./img/botao-adicionar.png" alt="botão ver mais" class="btn__sobre-img" id="img-missao"></button>
+                <div id="contentDivMissao" class="btn__sobre-mostrar hidden">
+                    <p>Fornecer a melhor assistência médica e serviços de emergência com rapidez, utilizando todos os recursos humanos e tecnológicos disponíveis para garantir conforto e tranquilidade aos nossos clientes.</p>
+                </div>
+            </div>
+
+            <div class="conteudo__sobre-div">
+                <button id="mostrarDivButtonVisao" class="btn__sobre" onclick="">Visão <img src="./img/botao-adicionar.png" alt="botão ver mais" class="btn__sobre-img" id="img-visao"></button>
+                <div id="contentDivVisao" class="btn__sobre-mostrar hidden">
+                    <p>Ser uma empresa modelo e referência na gestão de negócios de saúde, destacando-se como o parceiro ideal para provedores de saúde privada e pública no Brasil, assim como para as pessoas que confiam seu cuidado médico a nós.</p>
+                </div>
+            </div>
+            
+            <div class="conteudo__sobre-div">
+                <button id="mostrarDivButtonValores" class="btn__sobre" onclick="">Valores <img src="./img/botao-adicionar.png" alt="botão ver mais" class="btn__sobre-img" id="img-valores"></button>
+                <div id="contentDivValores" class="btn__sobre-mostrar hidden">
+                    <p><span>Ética:</span> Guiar-se por este princípio para respeitar a vida e o espaço de cada cidadão.</br></br>
+
+                        <span>Solidariedade:</span> Manter uma percepção constante da realidade da saúde no Brasil, oferecendo soluções que valorizem e estimulem este valor.</br></br>
+                        
+                        <span>Humanização:</span> Priorizar o atendimento e o relacionamento humano, visando a satisfação e o bem-estar das pessoas.</p>
+                </div>
+            </div>
+
+        </section>
+
+    </div>  
+
+    <section class="container__footer">
+
+        <h2 class="titulo__redes">Fique por dentro das novidades! Siga-nos nas redes sociais.</h2>
+        <div class="container__img-redes">
+            <a class="link__redes" href="https://www.facebook.com/profile.php?id=100063756602190&ref=pages_you_manage" target="_blank"><img class="img__redes" src="./img/facebook.png" alt="logo facebook"></a>
+            <a class="link__redes" href="https://www.instagram.com/laboratoriopampanelli/" target="_blank"><img class="img__redes" src="./img/instagram.png" alt="logo instagram"></a>
+            <a class="link__redes" href="https://api.whatsapp.com/message/HZTN34W3NHSTA1?autoload=1&app_absent=0" target="_blank"><img class="img__redes" src="./img/whatsapp2.png" alt="logo whatsapp"></a>
+        </div>  
+        <div class="container__img-certificacao">
+            <img class="img__certificacao" src="./img/controllab.jpg" alt="logo controllab"> 
+            <img class="img__certificacao" src="./img/pncq.jpg" alt="logo pncq"> 
+        </div>
+        <p class="texto__copyright">© 2024 Peniel Tecnologia. Todos os direitos reservados.</p>
+    
     </section>
 
      <!-- JavaScript (Opcional) -->
