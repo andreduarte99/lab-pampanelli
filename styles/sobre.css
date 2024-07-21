@@ -74,5 +74,21 @@
 }
 
 @media only screen and (min-width: 1280px){
+    .img__sobre{
+        width:30%;
+    }
+
+    .conteudo__sobre{
+        width: 55%;
+        margin-left: 23%;
+        font-size: 1.3rem;
+    }
+
+    .btn__sobre{
+        width: 20%;
+        font-size:1.4rem;
+    }
+
     
+
 }

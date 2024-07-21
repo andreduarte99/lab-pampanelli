@@ -193,4 +193,12 @@ input#pesquisaInput{
         order: 1;
     }
 
+    .container__barra-pesquisa{
+        margin:0 20%;
+    }
+    
+    .container__pesquisa{
+        margin: 0 23%;
+    }
+
 }
