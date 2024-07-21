@@ -171,6 +171,15 @@ body{
     text-decoration: none;
 }
 
+.link-btn:link,
+.link-btn:visited,
+.link-btn:hover,
+.link-btn:focus,
+.link-btn:active {
+    text-decoration: none;
+    color: var(--cor-secundaria);
+}
+
 .img__link-btn{
     width: 28px;
     height: 28px;

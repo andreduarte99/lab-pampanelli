@@ -39,6 +39,16 @@
     border: 1px solid var(--cor-principal);
 }
 
+.btn__resultado:link,
+.btn__resultado:visited,
+.btn__resultado:hover,
+.btn__resultado:focus,
+.btn__resultado:active {
+    text-decoration: none;
+    color: white;
+}
+
+
 @media only screen and (min-width: 768px){
 
     .img__resultado{

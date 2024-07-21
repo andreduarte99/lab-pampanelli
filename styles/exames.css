@@ -41,6 +41,15 @@
     border: 1px solid var(--cor-principal);
 }
 
+.btn__exames:link,
+.btn__exames:visited,
+.btn__exames:hover,
+.btn__exames:focus,
+.btn__exames:active {
+    text-decoration: none;
+    color: white;
+}
+
 /*Página exames.html */
 
 .titulo__exame{

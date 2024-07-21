@@ -75,6 +75,15 @@
     border: 1px solid var(--cor-principal);
 }
 
+.btn__informativo:link,
+.btn__informativo:visited,
+.btn__informativos:hover,
+.btn__informativos:focus,
+.btn__informativos:active {
+    text-decoration: none;
+    color: white;
+}
+
 
 /*Accordion*/
 

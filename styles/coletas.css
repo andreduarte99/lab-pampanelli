@@ -43,6 +43,17 @@
     border: 1px solid var(--cor-principal);
 }
 
+.btn__coletas:link,
+.btn__coletas:visited,
+.btn__coletas:hover,
+.btn__coletas:focus,
+.btn__coletas:active {
+    text-decoration: none;
+    color: white;
+}
+
+
+
 .img__link-btn{
     width: 24px;
     height: 24px;
