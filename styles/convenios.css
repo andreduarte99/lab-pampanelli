@@ -25,6 +25,7 @@
 }
 
 .imgs__convenios{
+    align-items: center;
     text-align: center;
     align-content: center;
 }
