@@ -10,7 +10,7 @@ Projeto profissioanl em HTML, CSS e Javascript do Laboratório Pampanelli.
 <!-- Inserir imagem com a #vitrinedev ao final do link -->
 
 
-![Screenshot_2](https://github.com/user-attachments/assets/95c984d7-8ae4-46d4-9daf-d30596baad62)
+![Screenshot_2](https://github.com/user-attachments/assets/95c984d7-8ae4-46d4-9daf-d30596baad62#vitrinedev)
 
 
 
